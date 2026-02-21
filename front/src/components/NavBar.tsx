@@ -4,7 +4,7 @@ import logo from "../../public/logo.png";
 
 const NavBar = () => {
     return(
-        <div className="grid grid-cols-3 items-center w-[100vw] h-[15vh] bg-(--primary)">
+        <div className="grid grid-cols-2 justify-between items-center w-[100vw] h-[15vh] bg-(--primary)">
             <div className="flex justify-baseline">
                 <div>
                     <button>
@@ -20,29 +20,38 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-blue-500 flex justify-center items-center">
-                <Link href="./historia">
-                    <span>
-                        Historia
-                    </span>
-                </Link>
-            </div>
-            <div className="flex justify-center items-center">
-                <div className="mx-2">
-                    <Link href="/login" className="bg-detalles">
-                        <button className="bg-(--detalles)">
-                            <p>Iniciar Sesion</p>
-                        </button>
+
+            <div className="flex justify-end-safe items-center">
+                <div className="mr-15">
+                    <Link href="./historia"
+                    className="px-2 py-3
+                    hover:bg-secondary rounded-3xl hover:shadow-md hover:shadow-black">
+                        <span>
+                            Historia
+                        </span>
                     </Link>
                 </div>
-                <div>
-                    <button className="bg-(--detalles) px-1 py-1 rounded-2xl">
-                        <Link href="/register">
-                            <p className="text-(--primary) font-semibold">
-                                Registrarse
-                            </p>
-                        </Link>
-                    </button>
+                <div className="flex justify-center items-center mr-10">
+                    <div className="mx-2">
+                        <button className="bg-details px-2 py-3 rounded-3xl opacity-85
+                        hover:opacity-100 hover:shadow-md hover:shadow-black">
+                            <Link href="login">
+                                <p className="text-primary font-semibold">
+                                    Iniciar Sesion
+                                </p>
+                            </Link>
+                        </button>
+                    </div>
+                    <div>
+                        <button className="bg-details px-2 py-3 rounded-3xl opacity-85
+                        hover:opacity-100 hover:shadow-md hover:shadow-black">
+                            <Link href="/register">
+                                <p className="text-primary font-semibold">
+                                    Registrarse
+                                </p>
+                            </Link>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

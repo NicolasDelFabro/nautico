@@ -1,10 +1,10 @@
 import Image from "next/image";
 import landing from "../../public/Landing.png";
 
-//! INVESTIGAR COMO ADAPTAR CORRECTAMENTE EL ANCHO DE LA FOTO PARA QUE SE AJUSTE AL ANCHO DE LA PANTALLA;
+
 const Landing = () => {
     return(
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center w-[100vw] min-h-screen bg-(--background)">
             <Image src={landing} alt="Imagen de un rio con arboles"/>
         </div>
     )
