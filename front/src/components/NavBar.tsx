@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import Link from "next/link";
 import Image from "next/image";
@@ -27,7 +27,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="relative grid grid-cols-2 items-center w-full h-[15vh] bg-[var(--primary)] sm:h-[6vh] lg:h-[11vh]">
+    <div className="relative grid grid-cols-2 items-center w-full h-[15vh] bg-[var(--primary)] sm:h-[6vh] lg:h-[17vh]">
 
       {/* LOGO + TITULO */}
       <div className="flex items-center w-[80vw] pl-4 pt-2">
@@ -35,30 +35,30 @@ const NavBar = () => {
           <Image
             src={logo}
             alt="logo"
-            className="lg:w-[75px] lg:h-[75px] sm:w-[25px] h-[70px]"
+            className="lg:w-[75px] h-[75px] sm:w-[25px] h-[70px]"
           />
         </Link>
           <div className="flex flex-col w-[80vw]">
-            <h1 className="lg:text-3xl sm:text-lg">Club Náutico</h1>
-            <h1 className="lg:text-3xl sm:text-lg">Pergamino</h1>
+            <h1 className="lg:text-2xl sm:text-lg">Club Náutico</h1>
+            <h1 className="lg:text-2xl sm:text-lg">Pergamino</h1>
           </div>
       </div>
 
       {/* DESKTOP NAV */}
-      <div className="hidden md:flex justify-end items-center gap-4 pr-6">
-        <Link href="./historia" className="px-3 py-2 hover:bg-secondary rounded-2xl">
+      <div className="hidden md:inline-block items-center pr-4 w-[800px]">
+        <Link href="./historia" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
           Historia
         </Link>
-        <Link href="./nosotrros" className="px-3 py-2 hover:bg-secondary rounded-2xl">
+        <Link href="./nosotros" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
           Quiénes somos
         </Link>
-        <Link href="./calendario" className="px-3 py-2 hover:bg-secondary rounded-2xl">
+        <Link href="./calendario" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
           Calendario
         </Link>
-        <Link href="./login" className="px-3 py-2 hover:bg-secondary rounded-2xl">
+        <Link href="./login" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
           Iniciar sesión
         </Link>
-        <Link href="./register" className="px-3 py-2 hover:bg-secondary rounded-2xl">
+        <Link href="./register" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
           Registrarse
         </Link>
       </div>
