@@ -1,61 +1,103 @@
+'use client'
+
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/logo.png";
+import { useState, useRef, useEffect } from "react";
 
 const NavBar = () => {
-    return(
-        <div className="grid grid-cols-2 justify-between items-center w-[100vw] h-[15vh] bg-(--primary)">
-            <div className="flex justify-baseline">
-                <div>
-                    <button>
-                        <Link href="./">
-                            <Image src={logo} alt="logo" width={75} height={75} />
-                        </Link>
-                    </button>
-                </div>
-                <div className="flex items-center">
-                    <div className="flex flex-col">
-                        <h1 className="text-2xl">Club Náutico</h1>
-                        <h1 className="text-2xl">Pergamino</h1>
-                    </div>
-                </div>
-            </div>
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
-            <div className="flex justify-end-safe items-center">
-                <div className="mr-15">
-                    <Link href="./historia"
-                    className="px-2 py-3
-                    hover:bg-secondary rounded-3xl hover:shadow-md hover:shadow-black">
-                        <span>
-                            Historia
-                        </span>
-                    </Link>
-                </div>
-                <div className="flex justify-center items-center mr-10">
-                    <div className="mx-2">
-                        <button className="bg-details px-2 py-3 rounded-3xl opacity-85
-                        hover:opacity-100 hover:shadow-md hover:shadow-black">
-                            <Link href="login">
-                                <p className="text-primary font-semibold">
-                                    Iniciar Sesion
-                                </p>
-                            </Link>
-                        </button>
-                    </div>
-                    <div>
-                        <button className="bg-details px-2 py-3 rounded-3xl opacity-85
-                        hover:opacity-100 hover:shadow-md hover:shadow-black">
-                            <Link href="/register">
-                                <p className="text-primary font-semibold">
-                                    Registrarse
-                                </p>
-                            </Link>
-                        </button>
-                    </div>
-                </div>
-            </div>
+  // Cerrar menú al hacer click afuera
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <div className="relative grid grid-cols-2 items-center w-full h-[15vh] bg-[var(--primary)] sm:h-[6vh] lg:h-[17vh]">
+
+      {/* LOGO + TITULO */}
+      <div className="flex items-center w-[80vw] pl-4 pt-2">
+        <Link href="./" className="flex items-center gap-2">
+          <Image
+            src={logo}
+            alt="logo"
+            className="lg:w-[75px] h-[75px] sm:w-[25px] h-[70px]"
+          />
+        </Link>
+          <div className="flex flex-col w-[80vw]">
+            <h1 className="lg:text-2xl sm:text-lg">Club Náutico</h1>
+            <h1 className="lg:text-2xl sm:text-lg">Pergamino</h1>
+          </div>
+      </div>
+
+      {/* DESKTOP NAV */}
+      <div className="hidden md:inline-block items-center pr-4 w-[800px]">
+        <Link href="./historia" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
+          Historia
+        </Link>
+        <Link href="./nosotros" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
+          Quiénes somos
+        </Link>
+        <Link href="./calendario" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
+          Calendario
+        </Link>
+        <Link href="./login" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
+          Iniciar sesión
+        </Link>
+        <Link href="./register" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
+          Registrarse
+        </Link>
+      </div>
+
+      {/* BOTÓN MOBILE */}
+      <div className="flex justify-end md:hidden pr-4">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-3xl"
+        >
+          {isOpen ? "✕" : "☰"}
+        </button>
+      </div>
+
+      {/* MENÚ MOBILE */}
+      {isOpen && (
+        <div
+          ref={menuRef}
+          className="absolute top-full w-[100vw] bg-[var(--primary)]/85 shadow-lg p-4 flex flex-col gap-3 text-lg md:hidden"
+        >
+          <Link href="./login" onClick={() => setIsOpen(false)}>
+            Iniciar sesión
+          </Link>
+          <Link href="./register" onClick={() => setIsOpen(false)}>
+            Registrarse
+          </Link>
+          <Link href="./historia" onClick={() => setIsOpen(false)}>
+            Historia
+          </Link>
+          <Link href="./nosotros" onClick={() => setIsOpen(false)}>
+            Quiénes somos
+          </Link>
+          <Link href="./calendario" onClick={() => setIsOpen(false)}>
+            Calendario
+          </Link>
         </div>
-    )
-}
+      )}
+    </div>
+  );
+};
 
 export default NavBar;

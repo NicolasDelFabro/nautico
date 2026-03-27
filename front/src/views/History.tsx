@@ -1,4 +1,4 @@
-const History = () => {
+const HistoryView = () => {
     return(
         <div>
             <h1>
@@ -8,4 +8,4 @@ const History = () => {
     )
 }
 
-export default History;
+export default HistoryView;
