@@ -98,7 +98,7 @@ const Landing = () => {
 
                     <div className="flex items-center gap-2 p-3">
                         <MdOutlineRowing color="#EFF7EC" size={45} />
-                        <h2 className="text-[#EFF7EC] font-bold text-2xl">
+                        <h2 className="text-white font-bold text-2xl">
                             Remo
                         </h2>
                     </div>
