@@ -25,7 +25,7 @@ const Landing = () => {
             {/* Vista Desktop (solo PC) */}
             <div className="hidden lg:grid grid-cols-3 gap-8 w-full px-6 mt-10">
 
-                <div className="flex flex-col bg-[#032F46] rounded-3xl overflow-hidden">
+                <div className="flex flex-col bg-[#032F46] rounded-t-4xl rounded-b-3xl overflow-hidden">
                     <Image
                         src={canotaje}
                         alt="Persona realizando canotaje"
@@ -39,7 +39,7 @@ const Landing = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col bg-[#032F46] rounded-3xl overflow-hidden">
+                <div className="flex flex-col bg-[#032F46] rounded-t-4xl rounded-b-3xl overflow-hidden">
                     <Image
                         src={remo}
                         alt="Persona realizando remo"
@@ -54,7 +54,7 @@ const Landing = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col bg-[#032F46] rounded-3xl overflow-hidden">
+                <div className="flex flex-col bg-[#032F46] rounded-t-4xl rounded-b-3xl overflow-hidden">
                     <Image
                         src={funcional}
                         alt="Persona realizando entrenamiento funcional"
@@ -74,7 +74,7 @@ const Landing = () => {
             {/* Vista Mobile (celular y tablet) */}
             <div className="grid grid-cols-1 gap-4 mx-2 lg:hidden">
 
-                <div className="flex flex-col bg-[#032F46] rounded-3xl overflow-hidden">
+                <div className="flex flex-col bg-[#032F46] rounded-4xl overflow-hidden">
                     <Image
                         src={canotaje}
                         alt="Persona realizando canotaje"

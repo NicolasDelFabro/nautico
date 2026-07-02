@@ -1,23 +1,25 @@
-@import "tailwindcss";
+/* /* @import "tailwindcss";
 
 /* VARIABLES BASE */
 :root {
-  --primary: #000E29;
-  --secondary: #1D4E98;
-  --background: #E4E4E4;
-  --cards: rgba(221, 215, 215, 0.9);
-  --details: #F2A900;
-  --foreground: #000000; /* IMPORTANTE */
+  --primary: #01233F;
+  --secondary: #1D4F91;
+  --accet: #F3B705;
+  --background: #F5F7FA;
+  --surface: #FFFFFF;
+  --text: #1C1B15;
+  --text-muted: #788B91;
 }
 
 /* MAPPING PARA TAILWIND V4 */
 @theme inline {
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-accet: var(--accet);
   --color-background: var(--background);
-  --color-cards: rgb(175, 175, 175);
-  --color-details: var(--details);
-  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
 }
 
 /* DARK MODE */
