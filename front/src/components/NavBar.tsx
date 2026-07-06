@@ -1,31 +1,68 @@
-import react from "react";
 import Image from "next/image";
+import Link from "next/link";
 import escudo from "../../public/logo.png";
 
 const NavBar = () => {
-    return(
-        <div>
-            <div className="hidden:md flex justify-between">
-                <div className="grid grid-cols-2">
-                    <div className="flex items-center justify-center">
-                        <Image src={escudo} alt="escudo" width={80} height={80}/>
-                    </div>
-                    <div className="flex flex-col justify-center text-primary-text">
-                        <p>Club Náutico</p>
-      a                  <h4>pergamino</h4>
-                    </div>
+  return (
+    <>
+      {/* Desktop */}
+      <header className="hidden md:flex w-full h-[90px] bg-white shadow-sm">
+        <div className="max-w-7xl mx-auto w-full px-8 flex items-center justify-between">
 
-                    <div className="flex justify-around items-center">
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            <Image
+              src={escudo}
+              alt="Escudo"
+              width={65}
+              height={65}
+            />
 
-                    </div>
-                </div>
+            <div className="text-primary-text leading-tight">
+              <p className="font-bold text-lg">CLUB NÁUTICO</p>
+              <span className="text-sm">PERGAMINO</span>
             </div>
+          </div>
 
-            <div className="md:hidden">
-                <h1>VISTA MOBILE</h1>
-            </div>
+          {/* Navegación */}
+          <nav className="flex items-center gap-4 text-primary-text font-semibold mr-10">
+
+            <Link href="/">INICIO</Link>
+
+            <Link href="/deportes">DEPORTES</Link>
+
+            <Link href="/historia">HISTORIA</Link>
+
+            <Link href="/contacto">CONTACTOS</Link>
+
+          </nav>
+
+          {/* Botones */}
+          {/* <div className="flex gap-3">
+
+            <button
+              className="border border-primary rounded-md px-5 py-2 text-sm font-semibold"
+            >
+              INGRESAR
+            </button>
+
+            <button
+              className="bg-primary text-white rounded-md px-5 py-2 text-sm font-semibold"
+            >
+              REGISTRARSE
+            </button>
+
+          </div> */}
+
         </div>
-    )
-}
+      </header>
+
+      {/* Mobile */}
+      <header className="md:hidden">
+        Vista Mobile
+      </header>
+    </>
+  );
+};
 
 export default NavBar;
