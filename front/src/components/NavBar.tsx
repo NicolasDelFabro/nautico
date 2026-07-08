@@ -6,16 +6,16 @@ const NavBar = () => {
   return (
     <>
       {/* Desktop */}
-      <header className="hidden md:flex w-full h-[90px] bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto w-full px-8 flex items-center justify-between">
+      <header className="hidden md:flex w-[100vw] h-[90px] bg-white shadow-sm">
+        <div className="mx-auto w-full px-8 flex items-center justify-between">
 
           {/* Logo */}
           <div className="flex items-center gap-3">
             <Image
               src={escudo}
               alt="Escudo"
-              width={65}
-              height={65}
+              width={70}
+              height={70}
             />
 
             <div className="text-primary-text leading-tight">
