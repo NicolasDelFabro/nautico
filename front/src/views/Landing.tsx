@@ -25,7 +25,7 @@ const Landing = () => {
           <div className="max-w-xl">
 
             <h1 className="text-6xl font-bold text-primary-text">
-              NAVEGAMOS
+              NAVEGAMOS   
               <br />
               JUNTOS DESDE 1978
             </h1>
