@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <>
       {/* Desktop */}
-      <header className="hidden md:flex w-[100vw] h-[90px] bg-white shadow-sm">
+      <header className="hidden md:flex w-[100vw] h-[90px] bg-background shadow-sm">
         <div className="mx-auto w-full px-8 flex items-center justify-between">
 
           {/* Logo */}
