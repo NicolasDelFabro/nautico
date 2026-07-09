@@ -48,7 +48,7 @@ const Landing = () => {
 
               <p className="mt-6 text-primary-text leading font-semibold">
                 Descubrí un espacio donde el deporte, la naturaleza y la
-                amistad se encuentran.
+                amistad se encuentran
               </p>
 
               <button className="mt-8 bg-primary px-7 py-3 rounded-md text-background font-semibold">
