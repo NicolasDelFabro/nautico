@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import Header from "../../public/Header.png";
-import Canotaje from "../../public/Canotaje.png";
-import canotajeCard from "../../public/canotajeCard.png";
-import remoCard from "../../public/remoCard.png";
-import remo from "../../public/remo.png";
-import funcionalCard from "../../public/funcionalCard.png";
-import funcional from "../../public/funcional.png"
-import compañerismo from "../../public/compañerismo.png";
-import disiplina from "../../public/disiplina.png";
-import respeto from "../../public/respeto.png";
-import pasion from "../../public/pasion.png";
-import flayer from "../../public/flayer.png";
+import Header from "../../public/Landing/Header.png";
+import Canotaje from "../../public/Landing/Canotaje.png";
+import canotajeCard from "../../public/Landing/canotajeCard.png";
+import remoCard from "../../public/Landing/remoCard.png";
+import remo from "../../public/Landing/remo.png";
+import funcionalCard from "../../public/Landing/funcionalCard.png";
+import funcional from "../../public/Landing/funcional.png"
+import compañerismo from "../../public/Landing/compañerismo.png";
+import disiplina from "../../public/Landing/disiplina.png";
+import respeto from "../../public/Landing/respeto.png";
+import pasion from "../../public/Landing/pasion.png";
+import flayer from "../../public/Landing/flayer.png";
 
 const Landing = () => {
   return (
@@ -143,7 +143,7 @@ const Landing = () => {
           </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center w-[100vw] bg-primary mt-12">
+      <div className="flex flex-col justify-center items-center w-[100vw] bg-linear-to-r from-primary to-secundary mt-12">
         <div className="flex flex-col justify-center items-center mt-12">
           <h3 className="text-text-secundary font-bold text-3xl">SOMOS COMUNIDAD</h3>
           <div className="flex flex-col items-center w-xl mt-6">
