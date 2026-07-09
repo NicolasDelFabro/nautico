@@ -11,12 +11,14 @@ const NavBar = () => {
 
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <Image
-              src={escudo}
-              alt="Escudo"
-              width={70}
-              height={70}
-            />
+            <Link href="./">
+              <Image
+                src={escudo}
+                alt="Escudo"
+                width={70}
+                height={70}
+              />
+            </Link>
 
             <div className="text-primary-text leading-tight">
               <p className="font-bold text-lg">CLUB NÁUTICO</p>

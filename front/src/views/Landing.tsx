@@ -19,7 +19,7 @@ const Landing = () => {
         <section className="relative h-[700px] w-[100vw]">
 
       {/* Imagen */}
-        <Link href="./depoertes/canotaje">
+        <Link href="./">
           <div>
             <Image
             src={Header}
@@ -83,7 +83,7 @@ const Landing = () => {
                 <p className="text-primary-text font-regular">
                   Disfrutá de la aventura en el agua y supera tus limites.
                 </p>
-                <Link href="./deportes/canotaje">
+                <Link href="./">
                   <p className="m-5 text-lg text-primary-text font-bold">
                     Ver más 
                   </p>
@@ -108,7 +108,7 @@ const Landing = () => {
                 <p className="text-primary-text font-regular">
                   Disfrutá de la aventura en el agua y supera tus limites.
                 </p>
-                <Link href="./deportes/remo">
+                <Link href="./">
                   <p className="m-5 text-primary-text text-lg font-bold">
                     Ver más
                   </p>
@@ -132,7 +132,7 @@ const Landing = () => {
                 <p className="text-primary-text font-regular">
                   Disfrutá de la aventura en el agua y supera tus limites.
                 </p>
-                <Link href="./deportes/funcional">
+                <Link href="./">
                   <p className="m-5 text-lg text-primary-text font-bold">
                     Ver más
                   </p>

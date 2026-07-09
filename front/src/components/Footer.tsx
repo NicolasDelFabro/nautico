@@ -31,9 +31,9 @@ const Footer = () => {
                 <div className="flex flex-col justify-center items-center
                 text-text-secundary text-lg font-medium">
                     <Link href="./" className="p-1">Inicio</Link>
-                    <Link href="./deportes" className="p-1">Deportes</Link>
-                    <Link href="./historia" className="p-1">Historia</Link>
-                    <Link href="./contactos"className="p-1">Contactos</Link>
+                    <Link href="./" className="p-1">Deportes</Link>
+                    <Link href="./" className="p-1">Historia</Link>
+                    <Link href="./"className="p-1">Contactos</Link>
                 </div>
             </div>
 
@@ -46,8 +46,8 @@ const Footer = () => {
                 <div className="flex flex-col justify-center items-center
                 text-text-secundary text-lg font-medium">
                     <Link href="./" className="p-1">Registrarse</Link>
-                    <Link href="./deportes" className="p-1">Cuotas</Link>
-                    <Link href="./historia" className="p-1">Preguntas frecuentes</Link>
+                    <Link href="./" className="p-1">Cuotas</Link>
+                    <Link href="./" className="p-1">Preguntas frecuentes</Link>
                 </div>
             </div>
             
