@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import Header from "../../public/Landing/Header.png";
-import Canotaje from "../../public/Landing/Canotaje.png";
-import canotajeCard from "../../public/Landing/canotajeCard.png";
-import remoCard from "../../public/Landing/remoCard.png";
-import remo from "../../public/Landing/remo.png";
-import funcionalCard from "../../public/Landing/funcionalCard.png";
-import funcional from "../../public/Landing/funcional.png"
-import compañerismo from "../../public/Landing/compañerismo.png";
-import disiplina from "../../public/Landing/disiplina.png";
-import respeto from "../../public/Landing/respeto.png";
-import pasion from "../../public/Landing/pasion.png";
-import flayer from "../../public/Landing/flayer.png";
+import Header from "../../public/landing/Header.png";
+import Canotaje from "../../public/landing/Canotaje.png";
+import canotajeCard from "../../public/landing/canotajeCard.png";
+import remoCard from "../../public/landing/remoCard.png";
+import remo from "../../public/landing/remo.png";
+import funcionalCard from "../../public/landing/funcionalCard.png";
+import funcional from "../../public/landing/funcional.png"
+import compañerismo from "../../public/landing/compañerismo.png";
+import disiplina from "../../public/landing/disiplina.png";
+import respeto from "../../public/landing/respeto.png";
+import pasion from "../../public/landing/pasion.png";
+import flayer from "../../public/landing/flayer.png";
 
 const Landing = () => {
   return (
