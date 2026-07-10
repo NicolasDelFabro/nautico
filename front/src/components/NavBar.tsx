@@ -1,22 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
-import escudo from "../../public/logo.png";
+import escudo from "../../public/General/logo.png";
 
 const NavBar = () => {
   return (
     <>
       {/* Desktop */}
-      <header className="hidden md:flex w-[100vw] h-[90px] bg-white shadow-sm">
+      <header className="hidden md:flex w-[100vw] h-[90px] bg-background shadow-sm">
         <div className="mx-auto w-full px-8 flex items-center justify-between">
 
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <Image
-              src={escudo}
-              alt="Escudo"
-              width={70}
-              height={70}
-            />
+            <Link href="./">
+              <Image
+                src={escudo}
+                alt="Escudo"
+                width={70}
+                height={70}
+              />
+            </Link>
 
             <div className="text-primary-text leading-tight">
               <p className="font-bold text-lg">CLUB NÁUTICO</p>
