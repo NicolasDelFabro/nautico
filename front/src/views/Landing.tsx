@@ -4,7 +4,7 @@ import Header from "../../public/Header.png";
 
 const Landing = () => {
   return (
-    <section className="relative h-[700px] w-[100vw]">
+    <div className="hidden md:relative h-[700px] w-[100vw]">
 
       {/* Imagen */}
       <Image
@@ -44,7 +44,7 @@ const Landing = () => {
         </div>
       </div>
 
-    </section>
+    </div>
   );
 };
 
