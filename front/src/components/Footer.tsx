@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import escudo from "../../public/general/logo.png"
-import instagram from "../../public/footer/instagram.png";
-import whatsapp from "../../public/footer/whatsapp.png";
-import facebook from "../../public/footer/facebook.png";
+import escudo from "../../public/logo.png"
+import instagram from "../../public/instagram.png";
+import whatsapp from "../../public/whatsapp.png";
+import facebook from "../../public/facebook.png";
 
 const Footer = () => {
     return(
