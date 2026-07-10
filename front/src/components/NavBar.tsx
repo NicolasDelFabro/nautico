@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import escudo from "../../public/general/logo.png";
+import escudo from "../../public/logo.png";
 
 const NavBar = () => {
   return (
