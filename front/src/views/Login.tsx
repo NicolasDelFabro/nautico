@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import flayer from "../../public/Landing/Header.png";
+import flayer from "../../public/Header.png";
 
 function LoginView() {
   return (
