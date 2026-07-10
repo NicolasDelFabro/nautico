@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import flayer from "../../public/Landing/flayer.png";
+import flayer from "../../public/flayer.png";
 
 function RegisterView() {
   return (
