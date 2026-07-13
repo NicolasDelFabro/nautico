@@ -7,7 +7,7 @@ import facebook from "../../public/facebook.png";
 
 const Footer = () => {
     return(
-        <div className="flex flex-col-4 justify-between w-[100vw] bg-primary py-5">
+        <div className="hidden md:block flex flex-col-4 justify-between w-[100vw] bg-primary py-5">
             <div className="flex items-start gap-3 mx-10">
             <Image
               src={escudo}

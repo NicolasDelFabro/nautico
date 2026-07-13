@@ -60,7 +60,9 @@ const Landing = () => {
           </h3>
           <div className="flex justify-center items-center w-[100vw]">
             <div className="grid grid-cols-3 gap-30 rounded-2xl">
-              <div className="flex flex-col w-[20vw] bg-background shadow shadow-lg shadow-shadow rounded-3xl">
+              
+              {/*CANOTAJE*/}
+              <div className="flex flex-col w-[20vw] bg-background shadow shadow-lg shadow-shadow rounded-3xl pb-4">
                 <div className="h-[200px]">
                   <Image
                     src={canotajeCard}
@@ -72,23 +74,24 @@ const Landing = () => {
                   <Image src={Canotaje} alt="Canotaje" />
                 </div>
                 <div>
-                  <h3 className="text-primary-text text-2xl font-bold mx-22 my-[-20px]">
+                  <h3 className="text-primary-text text-xl font-semibold mx-22 my-[-20px]">
                     KAYAK
                   </h3>
                 </div>
-                <div className="mx-5 mt-6 w-2xs">
-                  <p className="text-primary-text font-regular">
+                <div className="mx-5 mt-6 w-4xs">
+                  <p className="text-primary-text font-regular pb-5">
                     Disfrutá de la aventura en el agua y supera tus limites.
                   </p>
-                  <Link href="./">
-                    <p className="m-5 text-lg text-primary-text font-bold">
+                  <Link href="./canotaje" className="m-5 py-5">
+                    <p className="text-lg text-primary-text font-bold">
                       Ver más
                     </p>
                   </Link>
                 </div>
               </div>
 
-              <div className="flex flex-col w-[18vw] bg-background shadow shadow-lg shadow-shadow rounded-3xl">
+              {/*REMO*/}
+              <div className="flex flex-col w-[20vw] bg-background shadow shadow-lg shadow-shadow rounded-3xl pb-4">
                 <div className="h-[200px]">
                   <Image
                     src={remoCard}
@@ -100,23 +103,24 @@ const Landing = () => {
                   <Image src={remo} alt="Canotaje" />
                 </div>
                 <div>
-                  <h3 className="text-primary-text text-2xl font-bold mx-22 my-[-20px]">
+                  <h3 className="text-primary-text text-xl font-semibold mx-22 my-[-20px]">
                     REMO
                   </h3>
                 </div>
-                <div className="mx-5 mt-6 w-2xs">
-                  <p className="text-primary-text font-regular">
+                <div className="mx-5 mt-6 w-4xs">
+                  <p className="text-primary-text font-regular pb-5">
                     Disfrutá de la aventura en el agua y supera tus limites.
                   </p>
-                  <Link href="./">
-                    <p className="m-5 text-primary-text text-lg font-bold">
+                  <Link href="./" className="m-5">
+                    <p className="text-primary-text text-lg font-bold">
                       Ver más
                     </p>
                   </Link>
                 </div>
               </div>
 
-              <div className="flex flex-col w-[18vw] bg-background shadow shadow-lg shadow-shadow rounded-3xl">
+              {/*FUNCIONAL*/}
+              <div className="flex flex-col w-[20vw] bg-background shadow shadow-lg shadow-shadow rounded-3xl pb-4">
                 <div className="h-[200px]">
                   <Image
                     src={funcionalCard}
@@ -128,16 +132,16 @@ const Landing = () => {
                   <Image src={funcional} alt="Canotaje" />
                 </div>
                 <div>
-                  <h3 className="text-primary-text text-2xl font-bold mx-22 my-[-20px]">
+                  <h3 className="text-primary-text text-xl font-semibold mx-22 my-[-20px]">
                     FUNCIONAL
                   </h3>
                 </div>
                 <div className="mx-5 mt-6 w-2xs">
-                  <p className="text-primary-text font-regular">
+                  <p className="text-primary-text font-regular pb-5">
                     Disfrutá de la aventura en el agua y supera tus limites.
                   </p>
-                  <Link href="./">
-                    <p className="m-5 text-lg text-primary-text font-bold">
+                  <Link href="./" className="m-5">
+                    <p className="text-lg text-primary-text font-bold">
                       Ver más
                     </p>
                   </Link>
