@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import instagram from "../../public/instagram.png";
 import flayer from "../../public/Landing.png";
-
+import { MdOutlineHealthAndSafety } from "react-icons/md";
+import { GrGroup } from "react-icons/gr";
+import { PiCompassRoseBold } from "react-icons/pi";
+import { AiOutlineSafety } from "react-icons/ai";
 
 const CanotajeView = () => {
   return (
@@ -103,12 +105,7 @@ const CanotajeView = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <Image
-              src={instagram}
-              alt=""
-              width={45}
-              height={45}
-            />
+            <PiCompassRoseBold size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               AVENTURA
@@ -123,12 +120,7 @@ const CanotajeView = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <Image
-              src={instagram}
-              alt=""
-              width={45}
-              height={45}
-            />
+            <MdOutlineHealthAndSafety size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               SALUD
@@ -143,12 +135,7 @@ const CanotajeView = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <Image
-              src={instagram}
-              alt=""
-              width={45}
-              height={45}
-            />
+            <GrGroup size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               COMUNIDAD
@@ -163,12 +150,7 @@ const CanotajeView = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <Image
-              src={instagram}
-              alt=""
-              width={45}
-              height={45}
-            />
+            <AiOutlineSafety size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               SEGURIDAD

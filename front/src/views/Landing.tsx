@@ -292,7 +292,7 @@ const Landing = () => {
                 <p className="text-primary-text font-regular text-sm">
                   Disfrutá de la aventura en el agua y supera tus limites.
                 </p>
-                <Link href="./">
+                <Link href="./deportes/kayak">
                   <p className="mt-4 text-base text-primary-text font-bold">
                     Ver más
                   </p>
