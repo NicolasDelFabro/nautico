@@ -109,7 +109,7 @@ const Landing = () => {
                 </div>
                 <div className="mx-5 mt-6 w-4xs">
                   <p className="text-primary-text font-regular pb-5">
-                    Disfrutá de la aventura en el agua y supera tus limites.
+                    Trabajo en equipo, tecnica y pasión por el remo.
                   </p>
                   <Link href="./" className="m-5">
                     <p className="text-primary-text text-lg font-bold">
@@ -136,9 +136,9 @@ const Landing = () => {
                     FUNCIONAL
                   </h3>
                 </div>
-                <div className="mx-5 mt-6 w-2xs">
+                <div className="mx-5 mt-6 w-4xs">
                   <p className="text-primary-text font-regular pb-5">
-                    Disfrutá de la aventura en el agua y supera tus limites.
+                    Entrenamientos pensados para mejorar tu rendimiento.
                   </p>
                   <Link href="./" className="m-5">
                     <p className="text-lg text-primary-text font-bold">
