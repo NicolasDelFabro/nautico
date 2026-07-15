@@ -82,7 +82,7 @@ const Landing = () => {
                   <p className="text-primary-text font-regular pb-5">
                     Disfrutá de la aventura en el agua y supera tus limites.
                   </p>
-                  <Link href="./canotaje" className="m-5 py-5">
+                  <Link href="./deportes/kayak" className="m-5 py-5">
                     <p className="text-lg text-primary-text font-bold">
                       Ver más
                     </p>
