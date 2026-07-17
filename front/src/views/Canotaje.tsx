@@ -7,6 +7,7 @@ import { MdOutlineHealthAndSafety } from "react-icons/md";
 import { GrGroup } from "react-icons/gr";
 import { PiCompassRoseBold } from "react-icons/pi";
 import { AiOutlineSafety } from "react-icons/ai";
+import { FaCheck } from "react-icons/fa6";
 
 const CanotajeView = () => {
   return (
@@ -15,7 +16,7 @@ const CanotajeView = () => {
             DESKTOP
       ========================= */}
 <div>
-      <div className="hidden lg:block">
+      <div className="hidden lg:block w-[100vw]">
 
         {/* HERO */}
         <section className="relative min-h-[700px] overflow-hidden">
@@ -213,29 +214,52 @@ const CanotajeView = () => {
           {/*SOBRE EL CANOTAJE*/}
           <div className="flex justify-around items-center bg-background py-8">
             <div className="flex flex-col justify-start">
-              <h2>
+              <h2 className="text-primary font-bold text-xl">
                 SOBRE EL KAYAK
               </h2>
-              <p>
+              <p className="ml-3 pb-2 text-lg text-primary-text">
                 El kayak es un deporte  náutico que combina técnica, fuerza y resistencia. <br />
                 En el Club Náutico Pergamino ofrecemos entrenamientos para todas las <br />
                 edades y niveles, desde principiantes hasta competidorers.
               </p>
+              <div className="flex flex-col text-primary-text font-semibold ml-3">
+                <div className="flex justify-start my-1 items-center">
+                  <FaCheck size={15} color="blue"/>
+                  <p className="ml-3">Botes individuales y colectivos.</p>
+                </div>
+                <div className="flex justify-start my-1 items-center">
+                  <FaCheck size={15} color="blue"/>
+                  <p className="ml-3">Entrenamiento para todos los niveles.</p>
+                </div>
+                <div className="flex justiy-start  my-1 items-center">
+                  <FaCheck size={15} color="blue"/>
+                  <p className="ml-3">Competencias locals y nacionales.</p>
+                </div>
+                <div className="flex justify-start my-1 items-center">
+                  <FaCheck size={15} color="blue"/>
+                  <p className="ml-3">Un deporte para toda la familia.</p>
+                </div>
+              </div>
             </div>
             <div className="flex justify-center items-center w-[40vw] h-[200px]">
-              <Image
+              <Image className="h-[200px] rounded-xl shadow-2xl shadow-shadow"
             src={canotajeCard}
             alt="Kayak"
           />
+            </div>
+          </div>
+
+          {/* CARRUSEL DE IMAGENES */}
+          <div className="flex justify-center items-center bg-background w-[100vw] h-[300px]">
+            <div className="flex justify-center items-center bg-background shadow-2xl shadow-shadow w-[90vw] h-[250px] rounded-3xl">
+                <h1 className="text-primary-text text-lg font-bold">CARRUSEL DE IMAGENES</h1>
             </div>
           </div>
         </section>
 
       </div>
 
-      {/* =========================
-      MOBILE
-========================= */}
+      {/* ========================= MOBILE ========================= */}
 
 <div className="block lg:hidden">
 
@@ -323,7 +347,7 @@ const CanotajeView = () => {
       preserveAspectRatio="none"
     >
       <path
-        fill="#0A2944"
+        fill="#01233F"
         d="
           M0,90
           C180,150 420,20 720,90
