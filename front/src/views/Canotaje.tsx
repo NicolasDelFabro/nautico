@@ -211,7 +211,7 @@ const CanotajeView = () => {
           </div>
 
           {/*SOBRE EL CANOTAJE*/}
-          <div className="flex justify-around items-center bg-background py-8">
+          <div className="flex justify-around items-center bg-background mt-14 py-8">
             <div className="flex flex-col justify-start">
               <h2>
                 SOBRE EL KAYAK
