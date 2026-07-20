@@ -16,7 +16,7 @@ const CanotajeView = () => {
             DESKTOP
       ========================= */}
 <div>
-      <div className="hidden lg:block w-[100vw]">
+      <div className="hidden lg:block w-full">
 
         {/* HERO */}
         <section className="relative min-h-[700px] overflow-hidden">
@@ -250,7 +250,7 @@ const CanotajeView = () => {
           </div>
 
           {/* CARRUSEL DE IMAGENES */}
-          <div className="flex justify-center items-center bg-background w-[100vw] h-[300px]">
+          <div className="flex justify-center items-center bg-background w-full h-[300px]">
             <div className="flex justify-center items-center bg-background shadow-2xl shadow-shadow w-[90vw] h-[250px] rounded-3xl">
                 <h1 className="text-primary-text text-lg font-bold">CARRUSEL DE IMAGENES</h1>
             </div>
