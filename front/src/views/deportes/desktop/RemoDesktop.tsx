@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import flayer from "../../../../public/Landing.png";
-import { MdOutlineHealthAndSafety } from "react-icons/md";
-import { GrGroup } from "react-icons/gr";
+import { GiDarkSquad } from "react-icons/gi";
 import { PiCompassRoseBold } from "react-icons/pi";
-import { AiOutlineSafety } from "react-icons/ai";
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { GiStrong } from "react-icons/gi";
 
 const CanotajeDesktop = () => {
   return (
@@ -108,57 +108,53 @@ const CanotajeDesktop = () => {
             <PiCompassRoseBold size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
-              AVENTURA
+              TRABAJO EN EQUIPO
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/80">
-              Explorá nuevos desafíos
-              en cada recorrido.
+              La fuerza del gruoo nos lleva más lejos.
             </p>
 
           </div>
 
           <div className="flex flex-col items-center text-center">
 
-            <MdOutlineHealthAndSafety size={50} color="white"/>
+            <GiDarkSquad size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
-              SALUD
+              DISCIPLINA
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/80">
-              Mejorá tu condición física
-              mientras disfrutás.
+              Constanca y dedicación en cada entrenamiento.
             </p>
 
           </div>
 
           <div className="flex flex-col items-center text-center">
 
-            <GrGroup size={50} color="white"/>
+            <GiStrong size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
-              COMUNIDAD
+              FUERZA
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/80">
-              Formá parte de un grupo
-              apasionado por el agua.
+              Desarrolla tu potencial fisico y mental.
             </p>
 
           </div>
 
           <div className="flex flex-col items-center text-center">
 
-            <AiOutlineSafety size={50} color="white"/>
+            <FaArrowTrendUp size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
-              SEGURIDAD
+              SUPEACIÓN
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/80">
-              Contamos con el mejor
-              equipamiento para vos.
+              Cada día es una nueva oportunidad para mejorar
             </p>
 
           </div>
