@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import flayer from "../../public/Landing.png";
+import flayer from "../../../../public/Landing.png";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
 import { GrGroup } from "react-icons/gr";
 import { PiCompassRoseBold } from "react-icons/pi";
 import { AiOutlineSafety } from "react-icons/ai";
 
-const CanotajeView = () => {
+const CanotajeDesktop = () => {
   return (
     <>
       {/* HERO */}
@@ -170,4 +170,4 @@ const CanotajeView = () => {
   );
 };
 
-export default CanotajeView;
+export default CanotajeDesktop;
