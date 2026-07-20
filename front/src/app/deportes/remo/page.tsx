@@ -1,4 +1,4 @@
-import RemoView from "@/views/Remo";
+import RemoView from "@/views/deportes/Remo";
 
 const RemoRout = () => {
     return(

@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import flayer from "../../public/Landing.png";
-import canotajeCard from "../../public/canotajeCard.png"
+import flayer from "../../../public/Landing.png";
+import remoCard from "../../../public/remoCard.png"
 
-import { MdOutlineHealthAndSafety } from "react-icons/md";
-import { GrGroup } from "react-icons/gr";
-import { PiCompassRoseBold } from "react-icons/pi";
-import { AiOutlineSafety } from "react-icons/ai";
+import { RiTeamLine } from "react-icons/ri";
+import { BiAlarm } from "react-icons/bi";
+import { LuBicepsFlexed } from "react-icons/lu";
+import { TfiCup } from "react-icons/tfi";
 import { FaCheck } from "react-icons/fa6";
 
 const CanotajeView = () => {
@@ -60,7 +60,7 @@ const CanotajeView = () => {
                 <span>›</span>
 
                 <span className="font-semibold text-primary-text">
-                  Kayak
+                  Remo
                 </span>
 
               </div>
@@ -70,13 +70,13 @@ const CanotajeView = () => {
               <div className="max-w-lg">
 
                 <h1 className="text-7xl font-black leading-none text-primary-text">
-                  KAYAK
+                  REMO
                 </h1>
 
                 <p className="mt-8 text-lg leading-8 text-primary-text">
-                  Conectá con la naturaleza,
-                  superá tus límites y viví la aventura
-                  desde una perspectiva única.
+                  Trabaja en equipo, disciplina y pasión <br />
+                  por el agua. Remamos juntos hacia <br />
+                  nuevas  metas.
                 </p>
 
                 <button
@@ -129,82 +129,78 @@ const CanotajeView = () => {
 
           <div className="relative z-30 mx-auto grid max-w-7xl grid-cols-4 gap-16 px-10">
 
-            {/* Aventura */}
+            {/* TRABAJO EN EQUIPO */}
 
             <div className="flex flex-col items-center text-center">
 
-              <PiCompassRoseBold
+              <RiTeamLine
                 size={50}
                 className="text-white"
               />
 
               <h3 className="mt-6 text-xl font-bold text-white">
-                AVENTURA
+                TRABAJO EN EQUIPO
               </h3>
 
               <p className="mt-4 max-w-[220px] text-sm leading-6 text-white/80">
-                Explorá nuevos desafíos
-                en cada recorrido.
+                La fuerza del grupo nos llevamas lejos.
               </p>
 
             </div>
 
-            {/* Salud */}
+            {/* DISCIPLINA */}
 
             <div className="flex flex-col items-center text-center">
 
-              <MdOutlineHealthAndSafety
+              <BiAlarm
                 size={50}
                 className="text-white"
               />
 
               <h3 className="mt-6 text-xl font-bold text-white">
-                SALUD
+                DISCIPLINA
               </h3>
 
               <p className="mt-4 max-w-[220px] text-sm leading-6 text-white/80">
-                Mejorá tu condición física
-                mientras disfrutás.
+                Constancia y dedicación enc ada entrenamiento.
               </p>
 
             </div>
 
-            {/* Comunidad */}
+            {/* FUERZA */}
 
             <div className="flex flex-col items-center text-center">
 
-              <GrGroup
+              <LuBicepsFlexed
                 size={50}
                 className="text-white"
               />
 
               <h3 className="mt-6 text-xl font-bold text-white">
-                COMUNIDAD
+                FUERZA
               </h3>
 
               <p className="mt-4 max-w-[220px] text-sm leading-6 text-white/80">
-                Formá parte de un grupo
-                apasionado por el agua.
+                Desarrollá todo tu potencial fisico y mental.
               </p>
 
             </div>
 
-            {/* Seguridad */}
+            {/* SUPERACION */}
 
             <div className="flex flex-col items-center text-center">
 
-              <AiOutlineSafety
+              <TfiCup
                 size={50}
                 className="text-white"
               />
 
               <h3 className="mt-6 text-xl font-bold text-white">
-                SEGURIDAD
+                SUPERACIÓN
               </h3>
 
               <p className="mt-4 max-w-[220px] text-sm leading-6 text-white/80">
-                Contamos con el mejor
-                equipamiento para vos.
+                Cada día es una nueva oportunidad para mejorar
               </p>
 
             </div>
@@ -218,9 +214,9 @@ const CanotajeView = () => {
                 SOBRE EL KAYAK
               </h2>
               <p className="ml-3 pb-2 text-lg text-primary-text">
-                El kayak es un deporte  náutico que combina técnica, fuerza y resistencia. <br />
-                En el Club Náutico Pergamino ofrecemos entrenamientos para todas las <br />
-                edades y niveles, desde principiantes hasta competidorers.
+                El remo es un deporte de equipo que exige coordinación, <br />
+                fuerza y resistencia. En el Club Náutico Pergamino contamos <br />
+                con embarcaciones modernas y entrenadores especialiados.
               </p>
               <div className="flex flex-col text-primary-text font-semibold ml-3">
                 <div className="flex justify-start my-1 items-center">
@@ -243,7 +239,7 @@ const CanotajeView = () => {
             </div>
             <div className="flex justify-center items-center w-[40vw] h-[200px]">
               <Image className="h-[200px] rounded-xl shadow-2xl shadow-shadow"
-            src={canotajeCard}
+            src={remoCard}
             alt="Kayak"
           />
             </div>
@@ -371,7 +367,7 @@ const CanotajeView = () => {
 
       <div className="flex flex-col items-center text-center">
 
-        <PiCompassRoseBold
+        <RiTeamLine
           size={42}
           className="text-white"
         />
@@ -391,7 +387,7 @@ const CanotajeView = () => {
 
       <div className="flex flex-col items-center text-center">
 
-        <MdOutlineHealthAndSafety
+        <BiAlarm
           size={42}
           className="text-white"
         />
@@ -411,7 +407,7 @@ const CanotajeView = () => {
 
       <div className="flex flex-col items-center text-center">
 
-        <GrGroup
+        <LuBicepsFlexed
           size={42}
           className="text-white"
         />
@@ -431,7 +427,7 @@ const CanotajeView = () => {
 
       <div className="flex flex-col items-center text-center">
 
-        <AiOutlineSafety
+        <TfiCup
           size={42}
           className="text-white"
         />
