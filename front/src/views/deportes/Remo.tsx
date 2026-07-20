@@ -245,6 +245,65 @@ const CanotajeView = () => {
             </div>
           </div>
 
+          {/* PARA QUIENES */}
+          <div className="flex flex-col justify-center items-center w-full bg-background py-5">
+            <div className="flex justify-center itemns-center w-[90vw]">
+              <h1 className="text-center text-xl font-bold text-primary-text">¿PARA QUIÉN ES ESTE DEPORTE?</h1>
+            </div>
+            <div className="grid grid-cols-4 justify-between items-center">
+              <div className="flex flex-col justify-center items-center">
+
+                {/* PRINCIPANTES */}
+                <div className="bg-shadow h-[45px] w-[45px]"></div>
+                <h3>
+                  PRINCIPIANTES
+                </h3>
+                <p>
+                  No necesitas experiencia previa.
+                  Te enseñamos desde cero.
+                </p>
+              </div>
+              {/* JOVENES */}
+              <div className="grid grid-cols-4 justify-between items-center">
+              <div className="flex flex-col justify-center items-center">
+                <div className="bg-shadow h-[45px] w-[45px]"></div>
+                <h3>
+                  JÓVENES
+                </h3>
+                <p>
+                  No necesitas experiencia previa.
+                  Te enseñamos desde cero.
+                </p>
+              </div>
+
+              {/*   ADULTOS */}
+              <div className="grid grid-cols-4 justify-between items-center">
+              <div className="flex flex-col justify-center items-center">
+                <div className="bg-shadow h-[45px] w-[45px]"></div>
+                <h3>
+                  ADULTOS
+                </h3>
+                <p>
+                  No necesitas experiencia previa.
+                  Te enseñamos desde cero.
+                </p>
+              </div>
+
+              {/* COMPETIDORES */}
+              <div className="grid grid-cols-4 justify-between items-center">
+              <div className="flex flex-col justify-center items-center">
+                <div className="bg-shadow h-[45px] w-[45px]"></div>
+                <h3>
+                  COMPETIDORES
+                </h3>
+                <p>
+                  No necesitas experiencia previa.
+                  Te enseñamos desde cero.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* CARRUSEL DE IMAGENES */}
           <div className="flex justify-center items-center bg-background w-full h-[300px]">
             <div className="flex justify-center items-center bg-background shadow-2xl shadow-shadow w-[90vw] h-[250px] rounded-3xl">
@@ -448,7 +507,6 @@ const CanotajeView = () => {
   </section>
 
 </div>
-    </div>
     </>
   );
 };
