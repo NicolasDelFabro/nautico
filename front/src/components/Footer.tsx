@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <>
             {/* Footer Desktop */}
-            <div className="hidden md:flex justify-between w-[100vw] bg-primary py-5">
+            <div className="hidden md:flex justify-between w-full bg-primary py-5">
                 <div className="flex items-start gap-3 mx-10">
                     <Image src={escudo} alt="Escudo" width={70} height={70} />
                     <div className="text-text-secundary leading-tight">
