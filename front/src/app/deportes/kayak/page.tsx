@@ -1,5 +1,3 @@
-import CanotajeView from "@/views/deportes/Canotaje";
-
 const CanotajeRoute = () => {
     return(
         <>
