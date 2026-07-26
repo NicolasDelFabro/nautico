@@ -9,6 +9,13 @@ import { GiStrong } from "react-icons/gi";
 
 import { FaCheck } from "react-icons/fa";
 
+import {
+  FaUsers,
+  FaBullseye,
+  FaDumbbell,
+  FaMountain,
+} from "react-icons/fa";
+
 const CanotajeDesktop = () => {
   return (
     <>
@@ -108,7 +115,7 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <PiCompassRoseBold size={50} color="white"/>
+            <FaUsers size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               TRABAJO EN EQUIPO
@@ -122,7 +129,7 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <GiDarkSquad size={50} color="white"/>
+            <FaBullseye size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               DISCIPLINA
@@ -136,7 +143,7 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <GiStrong size={50} color="white"/>
+            <FaDumbbell size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               FUERZA
@@ -150,7 +157,7 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <FaArrowTrendUp size={50} color="white"/>
+            <FaMountain size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               SUPEACIÓN

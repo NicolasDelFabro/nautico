@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import flayer from "../../../../public/Landing.png";
 import canotajeCard from "../../../../public/canotajeCard.png";
-import { GiDarkSquad } from "react-icons/gi";
-import { PiCompassRoseBold } from "react-icons/pi";
-import { FaArrowTrendUp } from "react-icons/fa6";
-import { GiStrong } from "react-icons/gi";
 import ParaQuienes from "@/components/ParaQuienes";
+import {
+  FaMountain,
+  FaHeartbeat,
+  FaUsers,
+  FaShieldAlt,
+} from "react-icons/fa";
 
 import { FaCheck } from "react-icons/fa";
 
@@ -109,7 +111,7 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <PiCompassRoseBold size={50} color="white"/>
+            <FaMountain size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               AVENTURA
@@ -124,7 +126,7 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <GiDarkSquad size={50} color="white"/>
+            <FaHeartbeat size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               SALUD
@@ -139,7 +141,7 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <GiStrong size={50} color="white"/>
+            <FaUsers size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               COMUNIDAD
@@ -154,7 +156,7 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <FaArrowTrendUp size={50} color="white"/>
+            <FaShieldAlt size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               SEGURIDAD
