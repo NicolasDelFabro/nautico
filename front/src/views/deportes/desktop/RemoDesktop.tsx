@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import flayer from "../../../../public/Landing.png";
-import remoCard from "../../../../public/remoCard.png";
-import { GiDarkSquad } from "react-icons/gi";
-import { PiCompassRoseBold } from "react-icons/pi";
-import { FaArrowTrendUp } from "react-icons/fa6";
-import { GiStrong } from "react-icons/gi";
+import canotajeCard from "../../../../public/canotajeCard.png";
+import ParaQuienes from "@/components/ParaQuienes";
+import {
+  FaUsers,
+  FaBullseye,
+  FaDumbbell,
+  FaMountain,
+} from "react-icons/fa";
 
 import { FaCheck } from "react-icons/fa";
 
@@ -49,7 +52,7 @@ const CanotajeDesktop = () => {
               <span>›</span>
 
               <span className="font-semibold">
-                Kayak
+                Remo
               </span>
 
             </div>
@@ -57,14 +60,13 @@ const CanotajeDesktop = () => {
             <div className="max-w-md">
 
               <h1 className="text-7xl font-black text-primary-text">
-                KAYAK
+                REMO
               </h1>
 
               <p className="mt-6 text-lg leading-8 text-primary-text">
-                Conectá con la naturaleza,
-                superá tus límites y viví
-                la aventura desde una
-                perspectiva única.
+                Trabajo en equipo, disciplina y pasión <br />
+                por el agua. Remamos juntos hacia <br />
+                nuevas metass.
               </p>
 
               <button className="mt-10 rounded-lg bg-primary px-8 py-4 font-semibold text-white transition hover:brightness-110">
@@ -108,56 +110,60 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <PiCompassRoseBold size={50} color="white"/>
+            <FaUsers size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               TRABAJO EN EQUIPO
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/80">
-              La fuerza del gruoo nos lleva más lejos.
+              La fuerza del grupo <br />
+              nos llevamas lejos.
             </p>
 
           </div>
 
           <div className="flex flex-col items-center text-center">
 
-            <GiDarkSquad size={50} color="white"/>
+            <FaBullseye size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               DISCIPLINA
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/80">
-              Constanca y dedicación en cada entrenamiento.
+              Constancia y dedicación <br />
+              en cada entrenamiento.
             </p>
 
           </div>
 
           <div className="flex flex-col items-center text-center">
 
-            <GiStrong size={50} color="white"/>
+            <FaDumbbell size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
-              FUERZA
+              FUERZZA
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/80">
-              Desarrolla tu potencial fisico y mental.
+              Desarrolla todo tu potencial <br />
+              fisico y mental.
             </p>
 
           </div>
 
           <div className="flex flex-col items-center text-center">
 
-            <FaArrowTrendUp size={50} color="white"/>
+            <FaMountain size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
-              SUPEACIÓN
+              SUPERACIÓN
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/80">
-              Cada día es una nueva oportunidad para mejorar
+              Cada dá es una nueva <br />
+              oportunidad para mejorar.
             </p>
 
           </div>
@@ -167,40 +173,59 @@ const CanotajeDesktop = () => {
       </section>
 
       {/* SOBRE EL REMO */}        
-        <section className="grid grid-cols-2 items-center bg-background py-4 w-[80vw] mx-auto">
+        <section className="grid grid-cols-2 items-center bg-background py-4 w-full mx-auto">
           <div className="flex flex-col justify-start items-start px-10 gap-4">
             <h1 className="text-primary-text text-xl font-bold">
               SOBRE EL REMO
             </h1>
 
             <div className="flex flex-col gap-2">
+
+              <div>
+                <span>
+                  El remo es un deporte de equipo que exigecoordinación,  <br />
+                  fuerza y resistencia. En el Club Náutico Pergamino contamos <br />
+                  con embarcaciones modernas y entrenadores especializados.
+                </span>
+              </div>
+
               <div className="flex justify-start items-center">
                 <FaCheck size={15} color="blue"/>
-                <p className="text-primary-text font-semibold">Botes individuales y colectivos.</p>
+                <p className="text-primary-text font-semibold"> Botes individuales y colectivos</p>
               </div>
               <div className="flex justify-start items-center">
                 <FaCheck size={15} color="blue"/>
-                <p className="text-primary-text font-semibold">Entretenimiento para todos los niveles.</p>
+                <p className="text-primary-text font-semibold"> Entrenamientos para todos los niveles</p>
               </div>
               <div className="flex justify-start items-center">
                 <FaCheck size={15} color="blue"/>
-                <p className="text-primary-text font-semibold">Competencias locales y regionales.</p>
+                <p className="text-primary-text font-semibold"> Competencias locale y regionales</p>
               </div>
               <div className="flex justify-start items-center">
-                <div className="">
-                  <FaCheck size={15} color="blue"/>
-                </div>
-                <p className="text-primary-text font-semibold">Un deporte para toda la vida.</p>
+                <FaCheck size={15} color="blue"/>
+                <p className="text-primary-text font-semibold"> Un deporte para toda la vida</p>
               </div>
             </div>
           </div>
 
           <div className="h-[300px]">
             <Image
-              src={remoCard}
+              src={canotajeCard}
               alt="Bote de remo"
               className="w-[40vw] h-full rounded-xl shadow-2xl shadow-shadow"
             />
+          </div>
+        </section>
+
+        {/* PARA QUIENES*/}
+        <section className="w-full flex justify-center items-center bg-background">
+            <ParaQuienes />
+        </section>
+
+        {/* CARRUSEL */}
+        <section className="flex justify-center items-center w-full h-[400px] bg-primary">
+          <div className="flex justify-center items-center w-[85vw] h-[300px] bg-background rounded-3xl">
+            <h1 className="text-primary-text font-extrabold text-2xl"> CARRUSEL DE IMAGENES</h1>
           </div>
         </section>
     </>
