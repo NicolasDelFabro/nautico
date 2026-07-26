@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import flayer from "../../../../public/Landing.png";
+import remoCard from "../../../../public/remoCard.png";
 import { GiDarkSquad } from "react-icons/gi";
 import { PiCompassRoseBold } from "react-icons/pi";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { GiStrong } from "react-icons/gi";
+
+import { FaCheck } from "react-icons/fa";
 
 const CanotajeDesktop = () => {
   return (
@@ -99,7 +102,7 @@ const CanotajeDesktop = () => {
       {/* BENEFICIOS */}
       <section className="bg-[#0A2944] pb-20">
 
-        <div className="-mt-12 relative z-30 mx-auto grid max-w-7xl grid-cols-4 gap-10 px-8">
+        <div className="-mt-14 relative z-30 mx-auto grid max-w-7xl grid-cols-4 gap-10 px-8">
 
           {/* Card */}
 
@@ -162,6 +165,44 @@ const CanotajeDesktop = () => {
         </div>
 
       </section>
+
+      {/* SOBRE EL REMO */}        
+        <section className="grid grid-cols-2 items-center bg-background py-4 w-[80vw] mx-auto">
+          <div className="flex flex-col justify-start items-start px-10 gap-4">
+            <h1 className="text-primary-text text-xl font-bold">
+              SOBRE EL REMO
+            </h1>
+
+            <div className="flex flex-col gap-2">
+              <div className="flex justify-start items-center">
+                <FaCheck size={15} color="blue"/>
+                <p className="text-primary-text font-semibold">Botes individuales y colectivos.</p>
+              </div>
+              <div className="flex justify-start items-center">
+                <FaCheck size={15} color="blue"/>
+                <p className="text-primary-text font-semibold">Entretenimiento para todos los niveles.</p>
+              </div>
+              <div className="flex justify-start items-center">
+                <FaCheck size={15} color="blue"/>
+                <p className="text-primary-text font-semibold">Competencias locales y regionales.</p>
+              </div>
+              <div className="flex justify-start items-center">
+                <div className="">
+                  <FaCheck size={15} color="blue"/>
+                </div>
+                <p className="text-primary-text font-semibold">Un deporte para toda la vida.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-[300px]">
+            <Image
+              src={remoCard}
+              alt="Bote de remo"
+              className="w-[40vw] h-full rounded-xl shadow-2xl shadow-shadow"
+            />
+          </div>
+        </section>
     </>
   );
 };

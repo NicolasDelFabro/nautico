@@ -23,7 +23,7 @@ const NavBar = () => {
 
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <Link href="./">
+            <Link href="/">
               <Image src={escudo} alt="Escudo" width={70} height={70} />
             </Link>
 
