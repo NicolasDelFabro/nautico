@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import flayer from "../../../../public/Landing.png";
-import { MdOutlineHealthAndSafety } from "react-icons/md";
-import { GrGroup } from "react-icons/gr";
+import canotajeCard from "../../../../public/canotajeCard.png";
+import { GiDarkSquad } from "react-icons/gi";
 import { PiCompassRoseBold } from "react-icons/pi";
-import { AiOutlineSafety } from "react-icons/ai";
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { GiStrong } from "react-icons/gi";
+import ParaQuienes from "@/components/ParaQuienes";
+
+import { FaCheck } from "react-icons/fa";
 
 const CanotajeDesktop = () => {
   return (
@@ -99,7 +103,7 @@ const CanotajeDesktop = () => {
       {/* BENEFICIOS */}
       <section className="bg-[#0A2944] pb-20">
 
-        <div className="-mt-12 relative z-30 mx-auto grid max-w-7xl grid-cols-4 gap-10 px-8">
+        <div className="-mt-14 relative z-30 mx-auto grid max-w-7xl grid-cols-4 gap-10 px-8">
 
           {/* Card */}
 
@@ -112,53 +116,53 @@ const CanotajeDesktop = () => {
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/80">
-              Explorá nuevos desafíos
-              en cada recorrido.
+              Explora nuevos desafios <br />
+              en cada entrenamiento.
             </p>
 
           </div>
 
           <div className="flex flex-col items-center text-center">
 
-            <MdOutlineHealthAndSafety size={50} color="white"/>
+            <GiDarkSquad size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               SALUD
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/80">
-              Mejorá tu condición física
-              mientras disfrutás.
+              Mejorá tu condición fisica <br />
+              y bienestar general
             </p>
 
           </div>
 
           <div className="flex flex-col items-center text-center">
 
-            <GrGroup size={50} color="white"/>
+            <GiStrong size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               COMUNIDAD
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/80">
-              Formá parte de un grupo
-              apasionado por el agua.
+              Forma parte de un grupo <br />
+              apasionado por el deporte.
             </p>
 
           </div>
 
           <div className="flex flex-col items-center text-center">
 
-            <AiOutlineSafety size={50} color="white"/>
+            <FaArrowTrendUp size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               SEGURIDAD
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/80">
-              Contamos con el mejor
-              equipamiento para vos.
+              Contamos con el mejora equipo <br />
+              y profecionales capacitados.
             </p>
 
           </div>
@@ -166,6 +170,67 @@ const CanotajeDesktop = () => {
         </div>
 
       </section>
+
+      {/* SOBRE EL REMO */}        
+        <section className="grid grid-cols-2 items-center bg-background py-4 w-full mx-auto">
+          <div className="flex flex-col justify-start items-start px-10 gap-4">
+            <h1 className="text-primary-text text-xl font-bold">
+              SOBRE EL KAYAK
+            </h1>
+
+            <div className="flex flex-col gap-2">
+
+              <div>
+                <span>
+                  El kayak es un deporte náutico que combina técnica, fuerza y resistencia. <br />
+                  En el Club Náutico Pergamino ofrecemos entrenamientos para todas las <br />
+                  edades y niveles, desde principiantes hasta competidores.
+                </span>
+              </div>
+
+              <div className="flex justify-start items-center">
+                <FaCheck size={15} color="blue"/>
+                <p className="text-primary-text font-semibold"> Entrenamientos personalizados</p>
+              </div>
+              <div className="flex justify-start items-center">
+                <FaCheck size={15} color="blue"/>
+                <p className="text-primary-text font-semibold"> Equipamiento de primera calidad.</p>
+              </div>
+              <div className="flex justify-start items-center">
+                <FaCheck size={15} color="blue"/>
+                <p className="text-primary-text font-semibold"> Instructores certificados.</p>
+              </div>
+              <div className="flex justify-start items-center">
+                <FaCheck size={15} color="blue"/>
+                <p className="text-primary-text font-semibold"> Participacion en competencias.</p>
+              </div>
+              <div className="flex justify-start items-center">
+                <FaCheck size={15} color="blue"/>
+                <p className="text-primary-text font-semibold"> Actividades recreativas y  sociales.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-[300px]">
+            <Image
+              src={canotajeCard}
+              alt="Bote de remo"
+              className="w-[40vw] h-full rounded-xl shadow-2xl shadow-shadow"
+            />
+          </div>
+        </section>
+
+        {/* PARA QUIENES*/}
+        <section className="w-full flex justify-center items-center bg-background">
+            <ParaQuienes />
+        </section>
+
+        {/* CARRUSEL */}
+        <section className="flex justify-center items-center w-full h-[400px] bg-primary">
+          <div className="flex justify-center items-center w-[85vw] h-[300px] bg-background rounded-3xl">
+            <h1 className="text-primary-text font-extrabold text-2xl"> CARRUSEL DE IMAGENES</h1>
+          </div>
+        </section>
     </>
   );
 };
