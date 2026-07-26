@@ -9,6 +9,13 @@ import { GiStrong } from "react-icons/gi";
 
 import { FaCheck } from "react-icons/fa";
 
+import {
+  FaUsers,
+  FaBullseye,
+  FaDumbbell,
+  FaMountain,
+} from "react-icons/fa";
+
 const CanotajeDesktop = () => {
   return (
     <>
@@ -108,7 +115,7 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <PiCompassRoseBold size={50} color="white"/>
+            <FaUsers size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               TRABAJO EN EQUIPO
@@ -122,7 +129,7 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <GiDarkSquad size={50} color="white"/>
+            <FaBullseye size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               DISCIPLINA
@@ -136,7 +143,7 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <GiStrong size={50} color="white"/>
+            <FaDumbbell size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               FUERZA
@@ -150,7 +157,7 @@ const CanotajeDesktop = () => {
 
           <div className="flex flex-col items-center text-center">
 
-            <FaArrowTrendUp size={50} color="white"/>
+            <FaMountain size={50} color="white"/>
 
             <h3 className="mt-5 text-xl font-bold text-white">
               SUPEACIÓN
@@ -167,7 +174,7 @@ const CanotajeDesktop = () => {
       </section>
 
       {/* SOBRE EL REMO */}        
-        <section className="grid grid-cols-2 items-center bg-background py-4 w-[80vw] mx-auto">
+        <section className="grid grid-cols-2 items-center bg-background py-4 w-full mx-auto">
           <div className="flex flex-col justify-start items-start px-10 gap-4">
             <h1 className="text-primary-text text-xl font-bold">
               SOBRE EL REMO
