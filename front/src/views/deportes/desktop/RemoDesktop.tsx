@@ -174,7 +174,7 @@ const CanotajeDesktop = () => {
       </section>
 
       {/* SOBRE EL REMO */}        
-        <section className="grid grid-cols-2 items-center bg-background py-4 w-[80vw] mx-auto">
+        <section className="grid grid-cols-2 items-center bg-background py-4 w-full mx-auto">
           <div className="flex flex-col justify-start items-start px-10 gap-4">
             <h1 className="text-primary-text text-xl font-bold">
               SOBRE EL REMO
