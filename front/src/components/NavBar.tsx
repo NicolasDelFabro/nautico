@@ -12,13 +12,13 @@ const NavBar = () => {
     { href: "/", label: "INICIO" },
     { href: "/deportes", label: "DEPORTES" },
     { href: "/historia", label: "HISTORIA" },
-    { href: "/contacto", label: "CONTACTOS" },
+    { href: "/contactos", label: "CONTACTOS" },
   ];
 
   return (
     <>
       {/* Desktop */}
-      <header className="hidden md:flex w-full h-[90px] bg-background shadow-sm">
+      <header className="hidden md:flex w-full h-[90px] bg-primary shadow-sm">
         <div className="mx-auto w-full px-8 flex items-center justify-between">
 
           {/* Logo */}
@@ -27,14 +27,14 @@ const NavBar = () => {
               <Image src={escudo} alt="Escudo" width={70} height={70} />
             </Link>
 
-            <div className="text-primary-text leading-tight">
+            <div className="text-terciario leading-tight">
               <p className="font-bold text-lg">CLUB NÁUTICO</p>
               <span className="text-sm">PERGAMINO</span>
             </div>
           </div>
 
           {/* Navegación */}
-          <nav className="flex items-center gap-4 text-primary-text font-semibold mr-10">
+          <nav className="flex items-center gap-4 text-terciario font-semibold mr-10">
             {links.map((link) => (
               <Link key={link.label} href={link.href}>
                 {link.label}
@@ -46,13 +46,13 @@ const NavBar = () => {
       </header>
 
       {/* Mobile */}
-      <header className="md:hidden relative w-full h-[60px] bg-background shadow-sm">
+      <header className="md:hidden relative w-full h-[60px] bg-primary shadow-sm">
         <div className="flex items-center justify-between h-full  px-5">
 
           {/* Logo */}
           <Link href="./" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
             <Image src={escudo} alt="Escudo" width={45} height={45} />
-            <div className="text-primary-text leading-tight">
+            <div className="text-terciario leading-tight">
               <p className="font-bold text-sm">CLUB NÁUTICO</p>
               <span className="text-xs">PERGAMINO</span>
             </div>
