@@ -18,7 +18,7 @@ const NavBar = () => {
   return (
     <>
       {/* Desktop */}
-      <header className="hidden md:flex w-full h-[90px] bg-primary shadow-sm">
+      <header className="hidden md:flex w-full h-[13vh] bg-primary shadow-sm">
         <div className="mx-auto w-full px-8 flex items-center justify-between">
 
           {/* Logo */}
