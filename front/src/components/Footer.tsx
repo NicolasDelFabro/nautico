@@ -22,16 +22,16 @@ const Footer = () => {
                     <h3 className="text-xl font-bold text-text-secundary">NAVEGACIÓN</h3>
                     <div className="flex flex-col justify-center items-center text-text-secundary text-lg font-medium">
                         <Link href="./" className="p-1">Inicio</Link>
-                        <Link href="./" className="p-1">Deportes</Link>
-                        <Link href="./" className="p-1">Historia</Link>
-                        <Link href="./" className="p-1">Contactos</Link>
+                        <Link href="./deportes" className="p-1">Deportes</Link>
+                        <Link href="./historia" className="p-1">Historia</Link>
+                        <Link href="./contactos" className="p-1">Contactos</Link>
                     </div>
                 </div>
 
                 <div className="flex flex-col justify-start items-center">
                     <h3 className="text-xl font-bold text-text-secundary">INFORMACIÓN</h3>
                     <div className="flex flex-col justify-center items-center text-text-secundary text-lg font-medium">
-                        <Link href="./" className="p-1">Registrarse</Link>
+                        <Link href="./register" className="p-1">Registrarse</Link>
                         <Link href="./" className="p-1">Cuotas</Link>
                         <Link href="./" className="p-1">Preguntas frecuentes</Link>
                     </div>

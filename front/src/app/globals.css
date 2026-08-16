@@ -15,6 +15,10 @@
   --color-terciario: #EBEBEB;
 }
 
+@theme {
+  --font-sans: var(--font-work-sans), sans-serif;
+}
+
 
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {
