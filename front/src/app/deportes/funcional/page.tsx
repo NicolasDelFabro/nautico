@@ -1,4 +1,4 @@
-import FuncionalView from "@/views/FuncionalView";
+import FuncionalView from "@/views/deportes/FuncionalView";
 
 const FuncionalRoute = () => {
     return(

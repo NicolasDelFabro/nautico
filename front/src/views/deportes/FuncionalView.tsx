@@ -1,4 +1,5 @@
-import FuncionalDesktop from "./deportes/desktop/funcionalDesktop"
+import FuncionalDesktop from "./desktop/funcionalDesktop";
+import FuncionalMobile from "./mobile/FuncionalMobile";
 
 const FuncionalView = () => {
     return(
@@ -10,7 +11,7 @@ const FuncionalView = () => {
 
             {/* VISTA MOBILE */}
             <div className="block md:hidden">
-
+                <FuncionalMobile/>
             </div>
         </>
     )
