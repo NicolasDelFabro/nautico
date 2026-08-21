@@ -70,7 +70,7 @@ const CanotajeDesktop = () => {
                 perspectiva única.
               </p>
 
-              <button className="mt-10 rounded-lg bg-primary px-8 py-4 font-semibold text-white transition hover:brightness-110">
+              <button className="mt-10 rounded-lg bg-primary px-8 py-4 font-title text-white transition hover:brightness-110">
 
                 QUIERO PROBAR
 
@@ -113,7 +113,7 @@ const CanotajeDesktop = () => {
 
             <FaMountain size={50} color="white"/>
 
-            <h3 className="mt-5 text-xl font-bold text-white">
+            <h3 className="mt-5 text-xl font-title text-white">
               AVENTURA
             </h3>
 
@@ -128,7 +128,7 @@ const CanotajeDesktop = () => {
 
             <FaHeartbeat size={50} color="white"/>
 
-            <h3 className="mt-5 text-xl font-bold text-white">
+            <h3 className="mt-5 text-xl font-title text-white">
               SALUD
             </h3>
 
@@ -143,7 +143,7 @@ const CanotajeDesktop = () => {
 
             <FaUsers size={50} color="white"/>
 
-            <h3 className="mt-5 text-xl font-bold text-white">
+            <h3 className="mt-5 text-xl font-title text-white">
               COMUNIDAD
             </h3>
 
@@ -158,7 +158,7 @@ const CanotajeDesktop = () => {
 
             <FaShieldAlt size={50} color="white"/>
 
-            <h3 className="mt-5 text-xl font-bold text-white">
+            <h3 className="mt-5 text-xl font-title text-white">
               SEGURIDAD
             </h3>
 
@@ -173,7 +173,7 @@ const CanotajeDesktop = () => {
 
       </section>
 
-      {/* SOBRE EL REMO */}        
+      {/* SOBRE EL KAYAK */}        
         <section className="grid grid-cols-2 items-center bg-background py-4 w-full mx-auto">
           <div className="flex flex-col justify-start items-start px-10 gap-4">
             <h1 className="text-primary-text text-xl font-bold">

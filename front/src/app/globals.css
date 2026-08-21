@@ -16,7 +16,8 @@
 }
 
 @theme {
-  --font-sans: var(--font-work-sans), sans-serif;
+  --font-title: var(--font-manrope);
+  --font-body: var(--font-work-sans)
 }
 
 

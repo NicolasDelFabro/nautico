@@ -37,7 +37,7 @@ const Landing = () => {
           <div className="absolute inset-0 flex items-center">
             <div className="max-w-7xl mx-auto w-full px-8">
               <div className="max-w-xl">
-                <h1 className="text-6xl font-bold text-primary-text">
+                <h1 className="text-6xl font-title text-primary-text">
                   NAVEGAMOS
                   <br />
                   JUNTOS DESDE 1978
@@ -46,7 +46,7 @@ const Landing = () => {
                   Descubrí un espacio donde el deporte, la naturaleza y la
                   amistad se encuentran.
                 </p>
-                <button className="mt-8 bg-primary px-7 py-3 rounded-md text-background font-semibold">
+                <button className="mt-8 bg-primary px-7 py-3 rounded-md text-background font-title">
                   CONOCÉ MÁS
                 </button>
               </div>
@@ -55,7 +55,7 @@ const Landing = () => {
         </section>
 
         <div className="flex flex-col justify-center items-center w-[100vw] bg-background">
-          <h3 className="text-primary-text text-3xl font-bold my-10">
+          <h3 className="text-primary-text text-3xl font-title my-10">
             ----- NUESTROS DEPORTES ----
           </h3>
           <div className="flex justify-center items-center w-[100vw]">
@@ -74,7 +74,7 @@ const Landing = () => {
                   <Image src={Canotaje} alt="Canotaje" />
                 </div>
                 <div>
-                  <h3 className="text-primary-text text-xl font-semibold mx-22 my-[-20px]">
+                  <h3 className="text-primary-text text-xl font-title mx-22 my-[-20px]">
                     KAYAK
                   </h3>
                 </div>
@@ -103,7 +103,7 @@ const Landing = () => {
                   <Image src={remo} alt="Canotaje" />
                 </div>
                 <div>
-                  <h3 className="text-primary-text text-xl font-semibold mx-22 my-[-20px]">
+                  <h3 className="text-primary-text text-xl font-title mx-22 my-[-20px]">
                     REMO
                   </h3>
                 </div>
@@ -132,7 +132,7 @@ const Landing = () => {
                   <Image src={funcional} alt="Canotaje" />
                 </div>
                 <div>
-                  <h3 className="text-primary-text text-xl font-semibold mx-22 my-[-20px]">
+                  <h3 className="text-primary-text text-xl font-title mx-22 my-[-20px]">
                     FUNCIONAL
                   </h3>
                 </div>
@@ -153,14 +153,14 @@ const Landing = () => {
         {/* FLAYER DE LA COMUNIDAD */}
         <div className="flex flex-col justify-center items-center w-[100vw] bg-linear-to-r from-primary to-secundary mt-12">
           <div className="flex flex-col justify-center items-center mt-12">
-            <h3 className="text-text-secundary font-bold text-3xl">
+            <h3 className="text-text-secundary font-title text-3xl">
               SOMOS COMUNIDAD
             </h3>
             <div className="flex flex-col items-center w-xl mt-6">
-              <p className="text-text-secundary font-regular">
+              <p className="text-text-secundary font-title">
                 En el Club Náutico Pergamino promovemos valores
               </p>
-              <p className="text-text-secundary font-regular">
+              <p className="text-text-secundary font-title">
                 que nos acompañan dentro y fuera del agua.
               </p>
             </div>
@@ -206,7 +206,7 @@ const Landing = () => {
 
               {/* Texto */}
               <div className="flex flex-col justify-center px-12 flex-1">
-                <h2 className="text-4xl font-bold text-primary-text">
+                <h2 className="text-4xl font-title text-primary-text">
                   ¿LISTO PARA SER PARTE?
                 </h2>
 
@@ -214,7 +214,7 @@ const Landing = () => {
                   Sumate a nuestra comunidad y disfrutá de todos los beneficios.
                 </p>
 
-                <button className="mt-6 w-fit bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">
+                <button className="mt-6 w-fit bg-primary text-white px-6 py-3 rounded-lg font-title hover:scale-105 transition">
                   QUIERO SER SOCIO
                 </button>
               </div>
@@ -247,7 +247,7 @@ const Landing = () => {
           <div className="absolute inset-0 flex items-center">
             <div className="w-full px-6">
               <div className="max-w-xl">
-                <h1 className="text-3xl font-bold text-primary-text leading-tight">
+                <h1 className="text-3xl font-title text-primary-text leading-tight">
                   NAVEGAMOS
                   <br />
                   JUNTOS DESDE 1978
@@ -258,7 +258,7 @@ const Landing = () => {
                   amistad se encuentran.
                 </p>
 
-                <button className="mt-6 bg-primary px-6 py-2.5 rounded-md text-background font-semibold text-sm">
+                <button className="mt-6 bg-primary px-6 py-2.5 rounded-md text-background font-title text-sm">
                   CONOCÉ MÁS
                 </button>
               </div>
@@ -267,7 +267,7 @@ const Landing = () => {
         </section>
 
         <div className="flex flex-col justify-center items-center w-[100vw] bg-background px-4">
-          <h3 className="text-primary-text text-xl font-bold my-8 text-center">
+          <h3 className="text-primary-text text-xl font-title my-8 text-center">
             ----- NUESTROS DEPORTES ----
           </h3>
 
@@ -361,14 +361,14 @@ const Landing = () => {
         {/* FLAYER DE LA COMUNIDAD */}
         <div className="flex flex-col justify-center items-center w-[100vw] bg-linear-to-r from-primary to-secundary mt-12">
           <div className="flex flex-col justify-center items-center mt-12 px-6 text-center">
-            <h3 className="text-text-secundary font-bold text-xl">
+            <h3 className="text-text-secundary font-title text-xl">
               SOMOS COMUNIDAD
             </h3>
             <div className="flex flex-col items-center w-full mt-6">
-              <p className="text-text-secundary font-regular text-sm">
+              <p className="text-text-secundary font-title text-sm">
                 En el Club Náutico Pergamino promovemos valores
               </p>
-              <p className="text-text-secundary font-regular text-sm">
+              <p className="text-text-secundary font-title text-sm">
                 que nos acompañan dentro y fuera del agua.
               </p>
             </div>
@@ -414,7 +414,7 @@ const Landing = () => {
 
               {/* Texto */}
               <div className="flex flex-col px-6 py-6">
-                <h2 className="text-2xl font-bold text-primary-text">
+                <h2 className="text-2xl font-title text-primary-text">
                   ¿LISTO PARA SER PARTE?
                 </h2>
 
@@ -422,7 +422,7 @@ const Landing = () => {
                   Sumate a nuestra comunidad y disfrutá de todos los beneficios.
                 </p>
 
-                <button className="mt-5 w-fit bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:scale-105 transition">
+                <button className="mt-5 w-fit bg-primary text-white px-5 py-2.5 rounded-lg font-title text-sm hover:scale-105 transition">
                   QUIERO SER SOCIO
                 </button>
               </div>

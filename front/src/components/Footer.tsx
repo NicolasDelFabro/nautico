@@ -13,14 +13,14 @@ const Footer = () => {
                 <div className="flex items-start gap-3 mx-10">
                     <Image src={escudo} alt="Escudo" width={70} height={70} />
                     <div className="text-text-secundary leading-tight">
-                        <p className="font-bold text-lg">CLUB NÁUTICO</p>
-                        <span className="text-sm">PERGAMINO</span>
+                        <p className="font-title text-lg">CLUB NÁUTICO</p>
+                        <span className="font-title text-sm">PERGAMINO</span>
                     </div>
                 </div>
 
                 <div className="flex flex-col justify-start items-center">
-                    <h3 className="text-xl font-bold text-text-secundary">NAVEGACIÓN</h3>
-                    <div className="flex flex-col justify-center items-center text-text-secundary text-lg font-medium">
+                    <h3 className="text-xl font-title text-text-secundary">NAVEGACIÓN</h3>
+                    <div className="flex flex-col justify-center items-center text-text-secundary text-lg font-body">
                         <Link href="./" className="p-1">Inicio</Link>
                         <Link href="./deportes" className="p-1">Deportes</Link>
                         <Link href="./historia" className="p-1">Historia</Link>
@@ -29,8 +29,8 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col justify-start items-center">
-                    <h3 className="text-xl font-bold text-text-secundary">INFORMACIÓN</h3>
-                    <div className="flex flex-col justify-center items-center text-text-secundary text-lg font-medium">
+                    <h3 className="text-xl font-title text-text-secundary">INFORMACIÓN</h3>
+                    <div className="flex flex-col justify-center items-center text-text-secundary text-lg font-body">
                         <Link href="./register" className="p-1">Registrarse</Link>
                         <Link href="./" className="p-1">Cuotas</Link>
                         <Link href="./" className="p-1">Preguntas frecuentes</Link>
@@ -38,8 +38,8 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col justify-start items-center pr-10">
-                    <h3 className="text-xl font-bold text-text-secundary">CONTACTOS</h3>
-                    <div className="flex flex-col justify-center items-center text-text-secundary text-lg font-medium">
+                    <h3 className="text-xl font-title text-text-secundary">CONTACTOS</h3>
+                    <div className="flex flex-col justify-center items-center text-text-secundary text-lg font-body">
                         <Link href="./" className="p-1">+54 2477557832</Link>
                         <Link href="./deportes" className="p-1">clubnauticopergamino@gmail.com</Link>
                     </div>
@@ -56,14 +56,14 @@ const Footer = () => {
                 <div className="flex flex-col items-center gap-2 text-center">
                     <Image src={escudo} alt="Escudo" width={60} height={60} />
                     <div className="text-text-secundary leading-tight">
-                        <p className="font-bold text-lg">CLUB NÁUTICO</p>
-                        <span className="text-sm">PERGAMINO</span>
+                        <p className="font-title text-lg">CLUB NÁUTICO</p>
+                        <span className="text-sm font-title">PERGAMINO</span>
                     </div>
                 </div>
 
                 <div className="flex flex-col items-center gap-2 text-center">
-                    <h3 className="text-lg font-bold text-text-secundary">NAVEGACIÓN</h3>
-                    <div className="flex flex-col items-center text-text-secundary text-base font-medium">
+                    <h3 className="text-lg font-title text-text-secundary">NAVEGACIÓN</h3>
+                    <div className="flex flex-col items-center text-text-secundary text-base font-body">
                         <Link href="./" className="p-1">Inicio</Link>
                         <Link href="./" className="p-1">Deportes</Link>
                         <Link href="./" className="p-1">Historia</Link>
@@ -72,8 +72,8 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col items-center gap-2 text-center">
-                    <h3 className="text-lg font-bold text-text-secundary">INFORMACIÓN</h3>
-                    <div className="flex flex-col items-center text-text-secundary text-base font-medium">
+                    <h3 className="text-lg font-title text-text-secundary">INFORMACIÓN</h3>
+                    <div className="flex flex-col items-center text-text-secundary text-base font-body">
                         <Link href="./" className="p-1">Registrarse</Link>
                         <Link href="./" className="p-1">Cuotas</Link>
                         <Link href="./" className="p-1">Preguntas frecuentes</Link>
@@ -81,8 +81,8 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col items-center gap-2 text-center">
-                    <h3 className="text-lg font-bold text-text-secundary">CONTACTOS</h3>
-                    <div className="flex flex-col items-center text-text-secundary text-base font-medium">
+                    <h3 className="text-lg font-title text-text-secundary">CONTACTOS</h3>
+                    <div className="flex flex-col items-center text-text-secundary text-base font-body">
                         <Link href="./" className="p-1">+54 2477557832</Link>
                         <Link href="./deportes" className="p-1">clubnauticopergamino@gmail.com</Link>
                     </div>

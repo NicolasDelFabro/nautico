@@ -28,13 +28,13 @@ const NavBar = () => {
             </Link>
 
             <div className="text-terciario leading-tight">
-              <p className="font-bold text-lg">CLUB NÁUTICO</p>
-              <span className="text-sm">PERGAMINO</span>
+              <p className="font-title text-lg">CLUB NÁUTICO</p>
+              <span className="font-title text-sm">PERGAMINO</span>
             </div>
           </div>
 
           {/* Navegación */}
-          <nav className="flex items-center gap-4 text-terciario font-semibold mr-10">
+          <nav className="flex items-center gap-4 text-terciario font-body mr-10">
             {links.map((link) => (
               <Link key={link.label} href={link.href}>
                 {link.label}
@@ -53,8 +53,8 @@ const NavBar = () => {
           <Link href="./" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
             <Image src={escudo} alt="Escudo" width={45} height={45} />
             <div className="text-terciario leading-tight">
-              <p className="font-bold text-sm">CLUB NÁUTICO</p>
-              <span className="text-xs">PERGAMINO</span>
+              <p className="font-title text-sm">CLUB NÁUTICO</p>
+              <span className="font-title text-xs">PERGAMINO</span>
             </div>
           </Link>
 
