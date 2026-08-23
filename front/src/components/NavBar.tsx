@@ -11,7 +11,7 @@ const NavBar = () => {
   const links = [
     { href: "/", label: "INICIO" },
     { href: "/deportes", label: "DEPORTES" },
-    { href: "/historia", label: "HISTORIA" },
+    // { href: "/historia", label: "HISTORIA" },
     { href: "/contactos", label: "CONTACTOS" },
   ];
 
