@@ -1,12 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../../public/Header.png";
-import Canotaje from "../../public/Canotaje.png";
-import canotajeCard from "../../public/canotajeCard.png";
-import remoCard from "../../public/remoCard.png";
-import remo from "../../public/remo.png";
-import funcionalCard from "../../public/funcionalCard.png";
-import funcional from "../../public/funcional.png";
+import CanotajeCard from "@/components/Cards/CanotajeCard";
+import RemoCard from "@/components/Cards/RemoCard";
+import FuncionalCard from "@/components/Cards/FuncionalCard";
 import compañerismo from "../../public/compañerismo.png";
 import disiplina from "../../public/disiplina.png";
 import respeto from "../../public/respeto.png";
@@ -62,91 +59,14 @@ const Landing = () => {
             <div className="grid grid-cols-3 gap-30 rounded-2xl">
               
               {/*CANOTAJE*/}
-              <div className="flex flex-col w-[20vw] bg-background shadow shadow-lg shadow-shadow rounded-3xl pb-4">
-                <div className="h-[200px]">
-                  <Image
-                    src={canotajeCard}
-                    alt="Canotaje"
-                    className="w-[100%] h-[200px] rounded-t-3xl"
-                  />
-                </div>
-                <div className="flex justify-center items-center w-[60px] h-[60px] bg-background rounded-[100%] mt-[-25px] mx-5 shadow shadow-2xl shadow-shadow">
-                  <Image src={Canotaje} alt="Canotaje" />
-                </div>
-                <div>
-                  <h3 className="text-primary-text text-xl font-title mx-22 my-[-20px]">
-                    KAYAK
-                  </h3>
-                </div>
-                <div className="mx-5 mt-6 w-4xs">
-                  <p className="text-primary-text font-regular pb-5">
-                    Disfrutá de la aventura en el agua y supera tus limites.
-                  </p>
-                  <Link href="./deportes/kayak" className="m-5 py-5">
-                    <p className="text-lg text-primary-text font-bold">
-                      Ver más
-                    </p>
-                  </Link>
-                </div>
-              </div>
+              <CanotajeCard />
 
               {/*REMO*/}
-              <div className="flex flex-col w-[20vw] bg-background shadow shadow-lg shadow-shadow rounded-3xl pb-4">
-                <div className="h-[200px]">
-                  <Image
-                    src={remoCard}
-                    alt="Canotaje"
-                    className="w-[100%] h-[200px] rounded-t-3xl"
-                  />
-                </div>
-                <div className="flex justify-center items-center w-[60px] h-[60px] bg-background rounded-[100%] mt-[-25px] mx-5 shadow shadow-2xl shadow-white">
-                  <Image src={remo} alt="Canotaje" />
-                </div>
-                <div>
-                  <h3 className="text-primary-text text-xl font-title mx-22 my-[-20px]">
-                    REMO
-                  </h3>
-                </div>
-                <div className="mx-5 mt-6 w-4xs">
-                  <p className="text-primary-text font-regular pb-5">
-                    Trabajo en equipo, tecnica y pasión por el remo.
-                  </p>
-                  <Link href="./" className="m-5">
-                    <p className="text-primary-text text-lg font-bold">
-                      Ver más
-                    </p>
-                  </Link>
-                </div>
-              </div>
+              <RemoCard />
 
               {/*FUNCIONAL*/}
-              <div className="flex flex-col w-[20vw] bg-background shadow shadow-lg shadow-shadow rounded-3xl pb-4">
-                <div className="h-[200px]">
-                  <Image
-                    src={funcionalCard}
-                    alt="Canotaje"
-                    className="w-[100%] h-[200px] rounded-t-3xl"
-                  />
-                </div>
-                <div className="flex justify-center items-center w-[60px] h-[60px] bg-background rounded-[100%] mt-[-25px] mx-5 shadow shadow-2xl shadow-white">
-                  <Image src={funcional} alt="Canotaje" />
-                </div>
-                <div>
-                  <h3 className="text-primary-text text-xl font-title mx-22 my-[-20px]">
-                    FUNCIONAL
-                  </h3>
-                </div>
-                <div className="mx-5 mt-6 w-4xs">
-                  <p className="text-primary-text font-regular pb-5">
-                    Entrenamientos pensados para mejorar tu rendimiento.
-                  </p>
-                  <Link href="./" className="m-5">
-                    <p className="text-lg text-primary-text font-bold">
-                      Ver más
-                    </p>
-                  </Link>
-                </div>
-              </div>
+              <FuncionalCard />
+
             </div>
           </div>
         </div>
@@ -271,91 +191,14 @@ const Landing = () => {
             ----- NUESTROS DEPORTES ----
           </h3>
 
-          <div className="flex flex-col gap-6 w-full max-w-sm">
-            <div className="flex flex-col w-full bg-background shadow shadow-lg shadow-shadow rounded-3xl">
-              <div className="h-[180px]">
-                <Image
-                  src={canotajeCard}
-                  alt="Canotaje"
-                  className="w-[100%] h-[180px] rounded-t-3xl"
-                />
-              </div>
-              <div className="flex justify-center items-center w-[56px] h-[56px] bg-background rounded-[100%] mt-[-24px] mx-5 shadow shadow-2xl shadow-shadow">
-                <Image src={Canotaje} alt="Canotaje" />
-              </div>
-              <div>
-                <h3 className="text-primary-text text-lg font-bold mx-8">
-                  KAYAK
-                </h3>
-              </div>
-              <div className="mx-5 mt-6 pb-5">
-                <p className="text-primary-text font-regular text-sm">
-                  Disfrutá de la aventura en el agua y supera tus limites.
-                </p>
-                <Link href="./deportes/kayak">
-                  <p className="mt-4 text-base text-primary-text font-bold">
-                    Ver más
-                  </p>
-                </Link>
-              </div>
-            </div>
+          {/* CANOTAJE */}
+          <CanotajeCard />
 
-            <div className="flex flex-col w-full bg-background shadow shadow-lg shadow-shadow rounded-3xl">
-              <div className="h-[180px]">
-                <Image
-                  src={remoCard}
-                  alt="Remo"
-                  className="w-[100%] h-[180px] rounded-t-3xl"
-                />
-              </div>
-              <div className="flex justify-center items-center w-[56px] h-[56px] bg-background rounded-[100%] mt-[-24px] mx-5 shadow shadow-2xl shadow-white">
-                <Image src={remo} alt="Remo" />
-              </div>
-              <div>
-                <h3 className="text-primary-text text-lg font-bold mx-8">
-                  REMO
-                </h3>
-              </div>
-              <div className="mx-5 mt-6 pb-5">
-                <p className="text-primary-text font-regular text-sm">
-                  Disfrutá de la aventura en el agua y supera tus limites.
-                </p>
-                <Link href="./">
-                  <p className="mt-4 text-base text-primary-text font-bold">
-                    Ver más
-                  </p>
-                </Link>
-              </div>
-            </div>
+          {/* REMO */}
+            <RemoCard />
 
-            <div className="flex flex-col w-full bg-background shadow shadow-lg shadow-shadow rounded-3xl">
-              <div className="h-[180px]">
-                <Image
-                  src={funcionalCard}
-                  alt="Funcional"
-                  className="w-[100%] h-[180px] rounded-t-3xl"
-                />
-              </div>
-              <div className="flex justify-center items-center w-[56px] h-[56px] bg-background rounded-[100%] mt-[-24px] mx-5 shadow shadow-2xl shadow-white">
-                <Image src={funcional} alt="Funcional" />
-              </div>
-              <div>
-                <h3 className="text-primary-text text-lg font-bold mx-8">
-                  FUNCIONAL
-                </h3>
-              </div>
-              <div className="mx-5 mt-6 pb-5">
-                <p className="text-primary-text font-regular text-sm">
-                  Disfrutá de la aventura en el agua y supera tus limites.
-                </p>
-                <Link href="./">
-                  <p className="mt-4 text-base text-primary-text font-bold">
-                    Ver más
-                  </p>
-                </Link>
-              </div>
-            </div>
-          </div>
+          {/* FUNCIONAL */}
+            <FuncionalCard />
         </div>
 
         {/* FLAYER DE LA COMUNIDAD */}
