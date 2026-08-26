@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import flayer from "../../../../public/Landing.png";
 import canotajeCard from "../../../../public/canotajeCard.png";
-import ParaQuienes from "@/components/ParaQuienes";
+import ParaQuinesDesktop from "@/components/Desktop/ParaQuienesDesktop";
 import {
   FaDumbbell,
   FaRunning,
@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 
 import { FaCheck } from "react-icons/fa";
+import ParaQuienes from "@/components/Desktop/ParaQuienesDesktop";
 
 const FuncionalDesktop = () => {
   return (
@@ -218,7 +219,7 @@ const FuncionalDesktop = () => {
 
         {/* PARA QUIENES*/}
         <section className="w-full flex justify-center items-center bg-background">
-            <ParaQuienes />
+            <ParaQuinesDesktop />
         </section>
 
         {/* CARRUSEL */}

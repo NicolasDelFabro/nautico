@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import CanotajeCard from "@/components/Cards/CanotajeCard";
-import RemoCard from "@/components/Cards/RemoCard";
-import FuncionalCard from "@/components/Cards/FuncionalCard";
+import { CanotajeCardDesktop } from "@/components/Cards/CanotajeCard";
+import { RemoCardDesktop } from "@/components/Cards/RemoCard";
+import { FuncionalCardDesktop} from "@/components/Cards/FuncionalCard";
 import Header from "../../../../public/Header.png"
 
 // Íconos inline para "Más que deporte" (reemplazar por <Image> si ya tenés
@@ -110,13 +110,13 @@ const DeportesDesktop = () => {
             <div className="grid grid-cols-3 gap-30 rounded-2xl">
               
               {/*CANOTAJE*/}
-              <CanotajeCard/>
+              <CanotajeCardDesktop />
 
               {/*REMO*/}
-              <RemoCard />
+              <RemoCardDesktop />
 
               {/*FUNCIONAL*/}
-              <FuncionalCard/>
+              <FuncionalCardDesktop />
             </div>
         </section>
 

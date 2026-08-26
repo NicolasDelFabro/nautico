@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../../public/Header.png";
-import CanotajeCard from "@/components/Cards/CanotajeCard";
-import RemoCard from "@/components/Cards/RemoCard";
-import FuncionalCard from "@/components/Cards/FuncionalCard";
+import { CanotajeCardDesktop, CanotajeCardMobile} from "@/components/Cards/CanotajeCard";
+import { RemoCardDesktop, RemoCardMobile} from "@/components/Cards/RemoCard";
+import { FuncionalCardDesktop, FuncionalCardMobile } from "@/components/Cards/FuncionalCard";
 import compañerismo from "../../public/compañerismo.png";
 import disiplina from "../../public/disiplina.png";
 import respeto from "../../public/respeto.png";
@@ -34,18 +34,20 @@ const Landing = () => {
           <div className="absolute inset-0 flex items-center">
             <div className="max-w-7xl mx-auto w-full px-8">
               <div className="max-w-xl">
-                <h1 className="text-6xl font-title text-primary-text">
+                <h1 className="text-6xl font-title text-terciario">
                   NAVEGAMOS
                   <br />
                   JUNTOS DESDE 1978
                 </h1>
-                <p className="mt-6 text-primary-text leading font-semibold">
+                <p className="mt-6 text-terciario leading font-semibold">
                   Descubrí un espacio donde el deporte, la naturaleza y la
                   amistad se encuentran.
                 </p>
-                <button className="mt-8 bg-primary px-7 py-3 rounded-md text-background font-title">
-                  CONOCÉ MÁS
-                </button>
+                <Link href="./deportes">
+                  <button className="mt-8 bg-primary px-7 py-3 rounded-md text-background font-title">
+                    CONOCÉ MÁS
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -59,13 +61,13 @@ const Landing = () => {
             <div className="grid grid-cols-3 gap-30 rounded-2xl">
               
               {/*CANOTAJE*/}
-              <CanotajeCard />
+              <CanotajeCardDesktop />
 
               {/*REMO*/}
-              <RemoCard />
+              <RemoCardDesktop />
 
               {/*FUNCIONAL*/}
-              <FuncionalCard />
+              <FuncionalCardDesktop />
 
             </div>
           </div>
@@ -178,9 +180,11 @@ const Landing = () => {
                   amistad se encuentran.
                 </p>
 
-                <button className="mt-6 bg-primary px-6 py-2.5 rounded-md text-background font-title text-sm">
-                  CONOCÉ MÁS
-                </button>
+                <Link href="./deportes">
+                  <button className="mt-8 bg-primary px-7 py-3 rounded-md text-background font-title">
+                    CONOCÉ MÁS
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -192,13 +196,19 @@ const Landing = () => {
           </h3>
 
           {/* CANOTAJE */}
-          <CanotajeCard />
+          <div className="py-2">
+            <CanotajeCardMobile />
+          </div>
 
           {/* REMO */}
-            <RemoCard />
+            <div className="py-2">
+              <RemoCardMobile />
+            </div>
 
           {/* FUNCIONAL */}
-            <FuncionalCard />
+            <div className="py-2">
+              <FuncionalCardMobile />
+            </div>
         </div>
 
         {/* FLAYER DE LA COMUNIDAD */}

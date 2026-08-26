@@ -1,4 +1,5 @@
 import ContactosDesktop from "./desktop/ContatosDesktop";
+import ContactosMobile from "./mobile/ContactosMobile";
 
 const ContactosView = () => {
     return(
@@ -10,7 +11,7 @@ const ContactosView = () => {
 
         {/* VISTA MOBILE */}
             <div>
-
+                <ContactosMobile />
             </div>
         </>
     )

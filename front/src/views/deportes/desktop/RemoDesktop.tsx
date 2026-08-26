@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import flayer from "../../../../public/Landing.png";
 import canotajeCard from "../../../../public/canotajeCard.png";
-import ParaQuienes from "@/components/ParaQuienes";
+import ParaQuienesDesktop from "@/components/Desktop/ParaQuienesDesktop";
 import {
   FaUsers,
   FaBullseye,
@@ -219,7 +219,7 @@ const CanotajeDesktop = () => {
 
         {/* PARA QUIENES*/}
         <section className="w-full flex justify-center items-center bg-background">
-            <ParaQuienes />
+            <ParaQuienesDesktop />
         </section>
 
         {/* CARRUSEL */}

@@ -66,17 +66,17 @@ const NavBar = () => {
             aria-expanded={isOpen}
           >
             <span
-              className={`block h-0.5 w-6 bg-primary-text transition-transform duration-300 ${
+              className={`block h-0.5 w-6 bg-terciario transition-transform duration-300 ${
                 isOpen ? "rotate-45 translate-y-2" : ""
               }`}
             />
             <span
-              className={`block h-0.5 w-6 bg-primary-text transition-opacity duration-300 ${
+              className={`block h-0.5 w-6 bg-terciario transition-opacity duration-300 ${
                 isOpen ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`block h-0.5 w-6 bg-primary-text transition-transform duration-300 ${
+              className={`block h-0.5 w-6 bg-terciario transition-transform duration-300 ${
                 isOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             />
@@ -92,7 +92,7 @@ const NavBar = () => {
 
   {/* Menú desplegable */}
   <nav
-    className={`absolute top-full left-0 w-full z-50 bg-background shadow-md flex flex-col items-center gap-y-5 py-6 text-primary-text font-semibold transition-all duration-300 ease-in-out ${
+    className={`absolute top-full left-0 w-full z-50 bg-primary shadow-md flex flex-col items-center gap-y-5 py-6 text-terciario font-semibold transition-all duration-300 ease-in-out ${
       isOpen
         ? "opacity-100 visible translate-y-0"
         : "opacity-0 invisible -translate-y-4"
