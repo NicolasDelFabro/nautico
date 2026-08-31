@@ -1,102 +1,117 @@
-'use client'
+"use client"
 
-import Link from "next/link";
+import { useState } from "react";
 import Image from "next/image";
-import logo from "../../public/logo.png";
-import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
+import escudo from "../../public/logo.png";
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const menuRef = useRef<HTMLDivElement | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
 
-  // Cerrar menú al hacer click afuera
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(event.target as Node)
-      ) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  const links = [
+    { href: "/", label: "INICIO" },
+    { href: "/deportes", label: "DEPORTES" },
+    // { href: "/historia", label: "HISTORIA" },
+    { href: "/contactos", label: "CONTACTOS" },
+  ];
 
   return (
-    <div className="relative grid grid-cols-2 items-center w-full h-[15vh] bg-[var(--primary)] sm:h-[6vh] lg:h-[17vh]">
+    <>
+      {/* Desktop */}
+      <header className="hidden md:flex w-full h-[13vh] bg-primary shadow-sm">
+        <div className="mx-auto w-full px-8 flex items-center justify-between">
 
-      {/* LOGO + TITULO */}
-      <div className="flex items-center w-[80vw] pl-4 pt-2">
-        <Link href="./" className="flex items-center gap-2">
-          <Image
-            src={logo}
-            alt="logo"
-            className="lg:w-[75px] h-[75px] sm:w-[25px] h-[70px]"
-          />
-        </Link>
-          <div className="flex flex-col w-[80vw]">
-            <h1 className="lg:text-2xl sm:text-lg">Club Náutico</h1>
-            <h1 className="lg:text-2xl sm:text-lg">Pergamino</h1>
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            <Link href="/">
+              <Image src={escudo} alt="Escudo" width={70} height={70} />
+            </Link>
+
+            <div className="text-terciario leading-tight">
+              <p className="font-title text-lg">CLUB NÁUTICO</p>
+              <span className="font-title text-sm">PERGAMINO</span>
+            </div>
           </div>
-      </div>
 
-      {/* DESKTOP NAV */}
-      <div className="hidden md:inline-block items-center pr-4 w-[800px]">
-        <Link href="./historia" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
-          Historia
-        </Link>
-        <Link href="./nosotros" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
-          Quiénes somos
-        </Link>
-        <Link href="./calendario" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
-          Calendario
-        </Link>
-        <Link href="./login" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
-          Iniciar sesión
-        </Link>
-        <Link href="./register" className="px-3 py-2 hover:bg-secondary rounded-2xl text-sm">
-          Registrarse
-        </Link>
-      </div>
+          {/* Navegación */}
+          <nav className="flex items-center gap-4 text-terciario font-body mr-10">
+            {links.map((link) => (
+              <Link key={link.label} href={link.href}>
+                {link.label}
+              </Link>
+            ))}
+          </nav>
 
-      {/* BOTÓN MOBILE */}
-      <div className="flex justify-end md:hidden pr-4">
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="text-3xl"
-        >
-          {isOpen ? "✕" : "☰"}
-        </button>
-      </div>
-
-      {/* MENÚ MOBILE */}
-      {isOpen && (
-        <div
-          ref={menuRef}
-          className="absolute top-full w-[100vw] bg-[var(--primary)]/85 shadow-lg p-4 flex flex-col gap-3 text-lg md:hidden"
-        >
-          <Link href="./login" onClick={() => setIsOpen(false)}>
-            Iniciar sesión
-          </Link>
-          <Link href="./register" onClick={() => setIsOpen(false)}>
-            Registrarse
-          </Link>
-          <Link href="./historia" onClick={() => setIsOpen(false)}>
-            Historia
-          </Link>
-          <Link href="./nosotros" onClick={() => setIsOpen(false)}>
-            Quiénes somos
-          </Link>
-          <Link href="./calendario" onClick={() => setIsOpen(false)}>
-            Calendario
-          </Link>
         </div>
-      )}
-    </div>
+      </header>
+
+      {/* Mobile */}
+      <header className="md:hidden relative w-full h-[60px] bg-primary shadow-sm">
+        <div className="flex items-center justify-between h-full  px-5">
+
+          {/* Logo */}
+          <Link href="./" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
+            <Image src={escudo} alt="Escudo" width={45} height={45} />
+            <div className="text-terciario leading-tight">
+              <p className="font-title text-sm">CLUB NÁUTICO</p>
+              <span className="font-title text-xs">PERGAMINO</span>
+            </div>
+          </Link>
+
+          {/* Botón hamburguesa */}
+          <button
+            className="flex flex-col justify-center items-center gap-1.5 w-8 h-8 z-50"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Abrir menú"
+            aria-expanded={isOpen}
+          >
+            <span
+              className={`block h-0.5 w-6 bg-terciario transition-transform duration-300 ${
+                isOpen ? "rotate-45 translate-y-2" : ""
+              }`}
+            />
+            <span
+              className={`block h-0.5 w-6 bg-terciario transition-opacity duration-300 ${
+                isOpen ? "opacity-0" : ""
+              }`}
+            />
+            <span
+              className={`block h-0.5 w-6 bg-terciario transition-transform duration-300 ${
+                isOpen ? "-rotate-45 -translate-y-2" : ""
+              }`}
+            />
+          </button>
+        </div>
+
+        {/* Menú desplegable */}
+        {/* Mobile */}
+<header className="md:hidden relative z-50 w-full bg-background shadow-sm">
+  <div className="flex items-center justify-between px-5">
+    {/* ...logo y botón... */}
+  </div>
+
+  {/* Menú desplegable */}
+  <nav
+    className={`absolute top-full left-0 w-full z-50 bg-primary shadow-md flex flex-col items-center gap-y-5 py-6 text-terciario font-semibold transition-all duration-300 ease-in-out ${
+      isOpen
+        ? "opacity-100 visible translate-y-0"
+        : "opacity-0 invisible -translate-y-4"
+    }`}
+  >
+    {links.map((link) => (
+      <Link
+        key={link.label}
+        href={link.href}
+        className="p-1"
+        onClick={() => setIsOpen(false)}
+      >
+        {link.label}
+      </Link>
+    ))}
+  </nav>
+</header>
+      </header>
+    </>
   );
 };
 
