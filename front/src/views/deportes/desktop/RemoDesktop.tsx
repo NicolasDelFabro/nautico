@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import flayer from "../../../../public/Landing.png";
-import canotajeCard from "../../../../public/canotajeCard.png";
+import flayer from "../../../../public/Remo1.jpg";
+import Remo from "../../../../public/Remo2.jpg";
 import ParaQuienesDesktop from "@/components/Desktop/ParaQuienesDesktop";
 import {
   FaUsers,
@@ -24,7 +24,7 @@ const CanotajeDesktop = () => {
           alt="Kayak"
           fill
           priority
-          className="object-cover"
+          className="object-cover ml-20"
         />
 
         {/* Overlay */}
@@ -210,7 +210,7 @@ const CanotajeDesktop = () => {
 
           <div className="h-[300px]">
             <Image
-              src={canotajeCard}
+              src={Remo}
               alt="Bote de remo"
               className="w-[40vw] h-full rounded-xl shadow-2xl shadow-shadow"
             />

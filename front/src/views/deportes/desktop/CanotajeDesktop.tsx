@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import flayer from "../../../../public/Landing.png";
+import flayer from "../../../../public/Canotaje3.jpg";
 import canotajeCard from "../../../../public/canotajeCard.png";
 import ParaQuienesDesktop from "@/components/Desktop/ParaQuienesDesktop";
 import {
@@ -24,7 +24,7 @@ const CanotajeDesktop = () => {
           alt="Kayak"
           fill
           priority
-          className="object-cover"
+          className="object-cover ml-14"
         />
 
         {/* Overlay */}
