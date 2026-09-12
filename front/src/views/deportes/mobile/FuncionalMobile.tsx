@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import flayer from "../../../../public/Landing.png";
-import canotajeCard from "../../../../public/canotajeCard.png";
+import FuncionalCard from "../../../../public/funcionalCard.png";
 import ParaQuienesMobile from "@/components/mobile/ParaQuienesMobile";
 import {
   FaDumbbell,
@@ -122,7 +122,7 @@ const FuncionalMobile = () => {
       <section className="flex flex-col bg-background py-10 px-6">
         <div className="w-full">
           <Image
-            src={canotajeCard}
+            src={FuncionalCard}
             alt="Entrenamiento funcional"
             className="w-full h-[220px] object-cover rounded-xl shadow-2xl shadow-shadow"
           />
