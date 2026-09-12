@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import canotajeCard from "../../../public/canotajeCard.png";
+import canotajeCard from "../../../public/canotaje9.jpg";
 import canotaje from "./../../../public/Canotaje.png";
 
 export const CanotajeCardDesktop = () => {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import remoCard from "../../../public/remoCard.png";
+import remoCard from "../../../public/remo3.jpg";
 import remo from "../../../public/remo.png";
 
 export const RemoCardDesktop = () => {

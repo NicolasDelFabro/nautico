@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import flayer from "../../../../public/Landing.png";
-import canotajeCard from "../../../../public/canotajeCard.png";
+import RemoCard from "../../../../public/remo.jpg";
 import ParaQuienesMobile from "@/components/mobile/ParaQuienesMobile";
 import {
   FaUsers,
@@ -122,7 +122,7 @@ const RemoMobile = () => {
       <section className="flex flex-col bg-background py-10 px-6">
         <div className="w-full">
           <Image
-            src={canotajeCard}
+            src={RemoCard}
             alt="Bote de remo"
             className="w-full h-[220px] object-cover rounded-xl shadow-2xl shadow-shadow"
           />

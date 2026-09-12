@@ -8,7 +8,7 @@ import compañerismo from "../../public/compañerismo.png";
 import disiplina from "../../public/disiplina.png";
 import respeto from "../../public/respeto.png";
 import pasion from "../../public/pasion.png";
-import flayer from "../../public/flayer.png";
+import flayer from "../../public/Landing.png";
 
 const Landing = () => {
   return (

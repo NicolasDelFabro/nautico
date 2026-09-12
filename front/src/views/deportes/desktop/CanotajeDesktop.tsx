@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import flayer from "../../../../public/Landing.png";
-import canotajeCard from "../../../../public/canotajeCard.png";
+import flayer from "../../../../public/canotaje7.jpg";
+import canotajeCard from "../../../../public/canotaje6.jpg";
 import ParaQuienesDesktop from "@/components/Desktop/ParaQuienesDesktop";
 import {
   FaMountain,

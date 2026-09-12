@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import flayer from "../../../../public/Landing.png";
-import canotajeCard from "../../../../public/canotajeCard.png";
+import FuncionalCard from "../../../../public/funcionalCard.png";
 import ParaQuinesDesktop from "@/components/Desktop/ParaQuienesDesktop";
 import {
   FaDumbbell,
@@ -210,7 +210,7 @@ const FuncionalDesktop = () => {
 
           <div className="h-[300px]">
             <Image
-              src={canotajeCard}
+              src={FuncionalCard}
               alt="Bote de remo"
               className="w-[40vw] h-full rounded-xl shadow-2xl shadow-shadow"
             />
