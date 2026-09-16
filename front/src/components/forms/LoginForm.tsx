@@ -39,10 +39,10 @@ const LoginForm = () => {
       setUsuario(data.usuario);
 
       if (data.mustChangePassword) {
-        router.push('/dashboard');
-      } else {
-        router.push('/admin');
-      }
+        router.push('/password-change');
+      } else if (data.usuario.rol === "admin" || data.usuario.rol === 'presidente' || data.usuario.rol === 'tesorero') {
+        router.push('/dashboard/admin');
+      } else ('/dashboard')
     } catch (err) {
       if (axios.isAxiosError(err)) {
         setError(err.response?.data?.message ?? 'Error al iniciar sesión');
