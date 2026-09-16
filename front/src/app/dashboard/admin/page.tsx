@@ -2,7 +2,7 @@
 
 import Unauthorized from "@/components/Unauthorized";
 import { useAuth } from "@/contexts/AuthContext";
-import DashboardAdminView from "@/views/dashboards/DashboardAdminView";
+import DashboardAdminView from "@/views/dashboards/admin/DashboardAdminView";
 
 
 

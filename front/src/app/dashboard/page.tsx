@@ -1,6 +1,6 @@
 'use client'
 
-import DashboardView from "@/views/dashboards/DashboardView";
+import DashboardView from "@/views/dashboards/user/DashboardView";
 import Unauthorized from "@/components/Unauthorized";
 import { useAuth } from "@/contexts/AuthContext";
 
