@@ -22,6 +22,18 @@ export interface IAuthResponse {
     id: number;
     name: string;
     dni: number;
+    email: string
     rol: Rol;
   };
+}
+
+export interface ISolicitarCodigo {
+  dni: number,
+  email: string
+}
+
+export interface ICambiarContraseña {
+  dni: number,
+  codigo: string,
+  nuevaContraseña: string
 }

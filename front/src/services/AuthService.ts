@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { IUser } from '@/interfaces/User';
-import { IAuthResponse, ILoginData, IRegisterData } from '@/interfaces/Auth';
+import { IAuthResponse, ILoginData, IRegisterData, ISolicitarCodigo, ICambiarContraseña } from '@/interfaces/Auth';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
 
@@ -29,4 +29,18 @@ export const getCurrentUser = async () => {
     withCredentials: true,
   });
   return data;
+};
+
+export const solicitarCodigo = async (data: ISolicitarCodigo): Promise<{ message: string }> => {
+  const { data: response } = await axios.post(`${API_URL}/auth/solicitar-codigo`, data, {
+    withCredentials: true,
+  });
+  return response;
+};
+
+export const cambiarPassword = async (data: ICambiarContraseña): Promise<{ message: string }> => {
+  const { data: response } = await axios.post(`${API_URL}/auth/cambiar-password`, data, {
+    withCredentials: true,
+  });
+  return response;
 };
