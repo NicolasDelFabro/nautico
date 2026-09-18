@@ -20,6 +20,15 @@
   --font-body: var(--font-work-sans)
 }
 
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {

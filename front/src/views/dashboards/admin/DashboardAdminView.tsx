@@ -1,10 +1,18 @@
+import DashboardAdminDesktop from "./desktop/DashboardAdminDesktop";
+
 const DashboardAdminView = () => {
     return( 
-        <div className="flex justify-center items-center">
-            <h1>
-                DASHBOARD DE ADMIN.
-            </h1>
+        <>
+      {/* ---DESKTOP--- */}
+        <div className="hidden md:block">
+          <DashboardAdminDesktop />
         </div>
+
+      {/* ---MOBILE--- */}
+        {/* <div className="block md:hidden">
+          <RemoMobile />
+        </div> */}
+    </>
     );
 };
 
