@@ -9,17 +9,19 @@ import DashboardAdminView from "@/views/dashboards/admin/DashboardAdminView";
 const DashboardAdminRoute = () => {
     const { usuario, loading } = useAuth()
 
-    if(usuario?.rol === 'admin') {
+    if(!usuario) {
         return(
             <>
                 <Unauthorized/>
             </>
         )
-    } else return(
-        <>
-            <DashboardAdminView/>
-        </>
-    )
+    } else if(usuario.rol === 'admin') {
+        return(
+            <>
+                <DashboardAdminView/>
+            </>
+        )
+    }
 }
 
 export default DashboardAdminRoute
