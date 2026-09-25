@@ -1,7 +1,14 @@
 import axios from "axios";
-import { IUser } from "@/interfaces/User";
+import { IUser, ICreateUser } from "@/interfaces/User";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+
+export const createUser = async (user: ICreateUser): Promise<IUser> => {
+    const response = await axios.post(`${API_URL}/users`, user, {
+        withCredentials: true,
+    });
+    return response.data;
+};
 
 export const getAllUsers = async (): Promise<IUser[]> => {
     const { data } = await axios.get<IUser[]>(`${API_URL}/users`, {

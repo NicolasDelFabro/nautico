@@ -14,3 +14,14 @@ export interface IUser {
   verificationCodeExpiresAt: string | null;
   mustChangePassword: boolean;
 }
+
+export interface ICreateUser{
+  name: string,
+  dni: number,
+  birthdate: string,
+  address: string,
+  phone: string,
+  email: string,
+  password: string,
+  rol: Rol
+}

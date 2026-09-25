@@ -42,7 +42,9 @@ const LoginForm = () => {
         router.push('/password-change');
       } else if (data.usuario.rol === "admin" || data.usuario.rol === 'presidente' || data.usuario.rol === 'tesorero') {
         router.push('/dashboard/admin');
-      } else ('/dashboard')
+      } else if (data.usuario.rol === "socio") {
+        router.push('/dashboard')
+      }
     } catch (err) {
       if (axios.isAxiosError(err)) {
         setError(err.response?.data?.message ?? 'Error al iniciar sesión');

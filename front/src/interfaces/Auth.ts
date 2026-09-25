@@ -35,5 +35,5 @@ export interface ISolicitarCodigo {
 export interface ICambiarContraseña {
   dni: number,
   codigo: string,
-  nuevaContraseña: string
+  nuevaPassword: string
 }
