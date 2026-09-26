@@ -13,7 +13,7 @@ interface Props {
 
 const CambiarPasswordModal = ({ dni, onClose, onSuccess }: Props) => {
   const [codigo, setCodigo] = useState('');
-  const [nuevaContraseña, setNuevaContraseña] = useState('');
+  const [nuevaPassword, setNuevaPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -23,7 +23,7 @@ const CambiarPasswordModal = ({ dni, onClose, onSuccess }: Props) => {
     setLoading(true);
 
     try {
-      await cambiarPassword({ dni, codigo, nuevaContraseña });
+      await cambiarPassword({ dni, codigo, nuevaPassword });
       onSuccess();
     } catch (err) {
       if (axios.isAxiosError(err)) {
@@ -58,8 +58,8 @@ const CambiarPasswordModal = ({ dni, onClose, onSuccess }: Props) => {
           <input
             type="password"
             placeholder="Nueva contraseña"
-            value={nuevaContraseña}
-            onChange={(e) => setNuevaContraseña(e.target.value)}
+            value={nuevaPassword}
+            onChange={(e) => setNuevaPassword(e.target.value)}
             minLength={6}
             required
             className="rounded-xl border border-slate-300 px-4 py-3"
