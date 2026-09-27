@@ -2,7 +2,7 @@ import axios from 'axios';
 import { IUser } from '@/interfaces/User';
 import { IAuthResponse, ILoginData, IRegisterData, ISolicitarCodigo, ICambiarContraseña } from '@/interfaces/Auth';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+const API_URL = 'http://localhost:3000';
 
 export const registerUser = async (data: IRegisterData): Promise<IUser> => {
   const { data: response } = await axios.post<IUser>(`${API_URL}/users`, data, {
