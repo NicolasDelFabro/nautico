@@ -64,7 +64,7 @@ const SociosDesktop = () => {
         e: React.ChangeEvent<HTMLInputElement>
     ) => {
 
-        const { name, value } = e.target;   
+        const { name, value } = e.target;
 
         setNuevoSocio((prev) => ({
             ...prev,
@@ -148,13 +148,25 @@ const SociosDesktop = () => {
         sociosFiltrados.length / usuarioPorPagina
     );
 
+    const paginaAnterior = () => {
+        setPaginaActual((prev) =>
+            prev > 1 ? prev - 1 : prev
+        );
+    };
+
+    const paginaSiguiente = () => {
+        setPaginaActual((prev) =>
+            prev < totalPaginas ? prev + 1 : prev
+        );
+    };
+
     return (
 
         <section className="w-full min-h-full p-8">
             <div className="flex justify-between items-center mb-8">
                 <div>
                     <h1 className="text-3xl font-bold text-primary-text">
-                        Socios
+                        Socios 
                     </h1>
 
                     <p className="text-gray-500 mt-1">
@@ -298,11 +310,24 @@ const SociosDesktop = () => {
                         </tbody>
                     </table>
                 )}
-                <div>
-                    <button onClick={() => setPaginaActual((prev) => prev - 1)}>
+                <div className="flex items-center justify-center gap-4 p-4">
+                    <button
+                        onClick={paginaAnterior}
+                        disabled={paginaActual === 1}
+                        className="px-4 py-2 rounded-lg border disabled:opacity-40 disabled:cursor-not-allowed"
+                    >
                         Anterior
                     </button>
-                    <button onClick={() => setPaginaActual((prev) => prev + 1)}>
+
+                    <span className="text-sm text-gray-600">
+                        Página {paginaActual} de {totalPaginas}
+                    </span>
+
+                    <button
+                        onClick={paginaSiguiente}
+                        disabled={paginaActual >= totalPaginas}
+                        className="px-4 py-2 rounded-lg border disabled:opacity-40 disabled:cursor-not-allowed"
+                    >
                         Siguiente
                     </button>
                 </div>
