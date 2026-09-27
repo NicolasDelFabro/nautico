@@ -1,7 +1,7 @@
 import axios from "axios";
 import { IUser, ICreateUser, IEditUser } from "@/interfaces/User";
 
-const API_URL = process.env.API_URL;
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export const createUser = async (user: ICreateUser): Promise<IUser> => {
     const response = await axios.post(`${API_URL}/users`, user, {
