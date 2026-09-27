@@ -1,7 +1,7 @@
 import axios from "axios";
-import { IUser, ICreateUser } from "@/interfaces/User";
+import { IUser, ICreateUser, IEditUser } from "@/interfaces/User";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+const API_URL = 'http://localhost:3000';
 
 export const createUser = async (user: ICreateUser): Promise<IUser> => {
     const response = await axios.post(`${API_URL}/users`, user, {
@@ -27,3 +27,9 @@ export const getUserByName = async (name: string): Promise<IUser> => {
 
     return data;
 };
+
+export const editUser = async (id: number, data: IEditUser): Promise<IUser> => {
+    const response = await axios.patch(`${API_URL}/users/${id}`, data);
+
+    return response.data;
+}

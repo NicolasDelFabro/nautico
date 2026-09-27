@@ -15,7 +15,7 @@ export interface IUser {
   mustChangePassword: boolean;
 }
 
-export interface ICreateUser{
+export interface ICreateUser {
   name: string,
   dni: number,
   birthdate: string,
@@ -24,4 +24,13 @@ export interface ICreateUser{
   email: string,
   password: string,
   rol: Rol
+}
+
+export interface IEditUser {
+  name?: string;
+  birthdate?: string;
+  address?: string;
+  phone?: string;
+  email?: string;
+  active?: boolean;
 }
